@@ -2,22 +2,30 @@ import './style.css';
 import Swiper from 'swiper';
 import 'swiper/css';
 
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
+// Swiper
+new Swiper('#patients-swiper', {
+  slidesPerView: 5,
+  centeredSlides: true,
+  spaceBetween: 12,
   loop: true,
+  navigation: { nextEl: '#patients-button-next', prevEl: '#patients-button-prev' },
+});
+new Swiper('#doctors-swiper', {
+  slidesPerView: 5,
+  centeredSlides: true,
+  spaceBetween: 12,
+  loop: true,
+  navigation: { nextEl: '#doctors-button-next', prevEl: '#doctors-button-prev' },
+});
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  }
+// Swiper tabs
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.swiper-container').forEach(container => container.classList.add('hidden'));
+    document.getElementById(btn.dataset.target).classList.remove('hidden');
+    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+    btn.classList.add('active');
+  });
 });
 
 // FAQ 
