@@ -1,4 +1,5 @@
-@import 'tailwindcss';
+@import "tailwindcss";
+@import "tailwindcss-animated";
 
 @layer base {
     :root {
@@ -82,3 +83,14 @@
         @apply uppercase text-[0.938rem] hover:text-[var(--color-green-highlight)] transition;
     }
 }
+
+@layer utilities {
+    @keyframes levitate {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+    .animate-levitate {
+      animation: levitate 2s ease-in-out infinite;
+    }
+  }
+  
