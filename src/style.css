@@ -3,6 +3,7 @@
 @layer base {
     :root {
         --text-color-primary: #777777;
+        --gradient-bg: linear-gradient(180deg, #00DC9B, #96AAFF);
     }
     html, body {
         @apply overflow-x-hidden;
@@ -50,5 +51,14 @@
     .li-item {
         @apply border-b border-[#E7EAEE];
         margin-bottom: 0 !important;
+    }
+
+    .card-function {
+        background: var(--gradient-bg);
+        @apply rounded-md p-[3px] hover:shadow-lg transition;
+    }
+
+    .card-function-inner {
+        @apply flex items-center gap-9 bg-white h-full p-9;
     }
 }
