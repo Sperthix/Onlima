@@ -75,6 +75,10 @@
 
     .form {
         @apply bg-white mt-1 p-3 block h-12 w-md border-[var(--border-color)] rounded-md;
+
+        @media (max-width: 480px) {
+            @apply w-full;
+        }
     }
 
     .btn-gradient {
