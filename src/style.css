@@ -1,1 +1,54 @@
 @import 'tailwindcss';
+
+@layer base {
+    :root {
+        --text-color-primary: #777777;
+    }
+    html, body {
+        @apply overflow-x-hidden;
+
+        font-family: 'Rubik', ui-sans-serif, system-ui, sans-serif;
+    }
+    *, *::before, *::after {
+        @apply box-border;
+    }
+    h1 {
+        @apply text-[3.375rem] font-light;
+      }
+      h2 {
+        @apply text-[2.25rem] font-light;
+      }
+      h3 {
+        @apply text-[1.5rem] font-light;
+      }
+      h4 {
+        @apply text-[1.125rem] font-medium;
+      }
+      p {
+        @apply text-[1.125rem] font-light text-[var(--text-color-primary)];
+      }
+}
+
+@layer components {
+    .benefits-toggle,
+    .faq-toggle {
+        @apply flex items-center justify-between w-full cursor-pointer p-8 pe-0 m-0 max-h-[90px] overflow-hidden;
+    }
+
+    .benefits-content {
+        @apply text-[1rem] max-w-[390px];
+    }
+
+    .selected {
+        @apply bg-[#F8F8F8];
+    }
+
+    .arrow-icon {
+        @apply w-6 h-6 transform transition;
+    }
+
+    .li-item {
+        @apply border-b border-[#E7EAEE];
+        margin-bottom: 0 !important;
+    }
+}
