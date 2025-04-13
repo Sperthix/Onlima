@@ -9,17 +9,13 @@
   </head>
   <body id="app">
     <!-- Header -->
-    <header class="flex items-center justify-between py-4 px-6">
+    <header class="flex items-center justify-between py-4 px-6 max-w-7xl mx-auto relative">
       <!-- Logo -->
       <a href="/" class="flex items-center space-x-2">
-        <img 
-          src="src/assets/medimate-logo.svg" 
-          alt="MediMate logo" 
-          class="h-15 w-auto"
-        />
+        <img src="src/assets/medimate-logo.svg" alt="MediMate logo" class="h-15 w-auto" />
       </a>
-      <!-- Hlavná navigácia -->
-      <nav aria-label="Hlavná navigácia">
+      <!-- Desktop nav -->
+      <nav aria-label="Hlavná navigácia" class="hidden lg:block">
         <ul class="flex gap-9.75">
           <li><a href="#o-aplikacii" class="nav-item">O aplikácií</a></li>
           <li><a href="#benefity" class="nav-item">Benefity</a></li>
@@ -28,7 +24,26 @@
           <li><a href="#kontakt" class="nav-item">Kontakt</a></li>
         </ul>
       </nav>
-      <button class="btn-gradient px-8"><a href="#download">Stiahnuť</a></button>
+      <!-- Mobile hamburger menu -->
+      <button id="mobile-menu-toggle" class="lg:hidden cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+      <!-- Mobile navigačný panel -->
+      <nav id="mobile-menu" class="lg:hidden hidden bg-white absolute top-full left-0 w-full shadow-md">
+        <ul class="flex flex-col py-4">
+          <li class="px-6 py-2 border-b"><a href="#o-aplikacii" class="block">O aplikácií</a></li>
+          <li class="px-6 py-2 border-b"><a href="#benefity" class="block">Benefity</a></li>
+          <li class="px-6 py-2 border-b"><a href="#medimate" class="block">MediMate</a></li>
+          <li class="px-6 py-2 border-b"><a href="#povedali-o-nas" class="block">Povedali o nás</a></li>
+          <li class="px-6 py-2"><a href="#kontakt" class="block">Kontakt</a></li>
+        </ul>
+      </nav>
+      <!-- Desktop btn -->
+      <button class="btn-gradient hidden lg:block px-8">
+        <a href="#download">Stiahnuť</a>
+      </button>
     </header>
     <main>
       <!-- Hero -->

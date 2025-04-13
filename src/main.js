@@ -2,6 +2,12 @@ import './style.css';
 import Swiper from 'swiper';
 import 'swiper/css';
 
+// Hamburger menu
+document.getElementById('mobile-menu-toggle').addEventListener('click', () => {
+  const mobileMenu = document.getElementById('mobile-menu');
+  mobileMenu.classList.toggle('hidden');
+});
+
 // Benefity
 document.querySelectorAll('.benefits-toggle').forEach(btn => {
   btn.addEventListener('click', () => {
