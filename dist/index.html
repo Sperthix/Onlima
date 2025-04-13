@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medimate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/assets/index-B03o9S-p.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-C0V1k--Y.css">
+  </head>
+  <body id="app">
+    <!-- Header -->
+    <header class="flex items-center justify-between py-4 px-6 max-w-7xl mx-auto">
+      <!-- Logo -->
+      <a href="/" class="flex items-center space-x-2">
+        <img 
+          src="/assets/medimate-logo-BsVEjnTA.svg" 
+          alt="MediMate logo" 
+          class="h-15 w-auto"
+        />
+      </a>
+      <!-- Hlavná navigácia -->
+      <nav aria-label="Hlavná navigácia">
+        <ul class="flex gap-9.75">
+          <li><a href="#o-aplikacii" class="nav-item">O aplikácií</a></li>
+          <li><a href="#benefity" class="nav-item">Benefity</a></li>
+          <li><a href="#medimate" class="nav-item">MediMate</a></li>
+          <li><a href="#povedali-o-nas" class="nav-item">Povedali o nás</a></li>
+          <li><a href="#kontakt" class="nav-item">Kontakt</a></li>
+        </ul>
+      </nav>
+      <button class="btn-gradient px-8"><a href="#download">Stiahnuť</a></button>
+    </header>
+    <main>
+      <!-- Hero -->
+      <section class="flex items-center justify-center gap-20 px-75 py-12">
+        <div class="w-1/3 flex justify-center">
+          <img src="/assets/hero-BslEYyw4.png" alt="Ilustrácia telefónu" class="max-w-md"/>
+        </div>
+        <div class="w-2/3">
+          <span class="inline-block uppercase text-[0.875rem] bg-[var(--background-blue)] py-1.75 px-3.25 rounded-lg w-auto">Lekárska pomoc kedykoľvek a kdekoľvek</span>
+          <h1 class="leading-20">MediMate - Lorem ipsum dolor sit amet</h1>
+          <p class="mb-6">Prekonajte bolesti, obnovte funkciu a dosiahnite optimálny pohyb s odbornou starostlivosťou Spineo Clinic. Začnite svoju cestu k lepšiemu zdraviu už dnes.</p>
+          <div class="flex gap-8">
+            <a href="#">
+              <img src="/assets/googleplay-button-BMvURX_y.svg" alt="Stiahnuť z Google Play" class="h-12"/>
+            </a>
+            <a href="#">
+              <img src="/assets/appstore-button-BDRYtlZT.svg" alt="Stiahnuť z App Store" class="h-12"/>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Sekcia -->
+      <section class="relative flex items-center justify-center pt-19.5 pb-21 bg-[var(--background-alt)]">
+        <img src="/assets/phone1-E1nwDEfH.png" alt="Telefón v ľavej ruke" class="absolute top-27 left-47 w-80" />
+        <div class="max-w-lg text-center">
+          <h2 class="mb-13">Zameraní na Váš zdravý život plný pohybu</h2>
+          <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse cursus tortor eu lacus volutpat elementum. Maecenas scelerisque diam vel urna sodales ullamcorper. Quisque eu pellentesque purus, a pulvinar erat.</p>
+        </div>
+        <img src="/assets/phone2-DgrHpO3J.png" alt="Telefón v pravej ruke" class="absolute -top-20 right-45 w-86"/>
+        <img src="/assets/heart-DQPoA7LX.svg" alt="Srdce" class="absolute -bottom-20 right-130"/>
+      </section>
+      <!-- Benefity -->
+      <section class="px-50 pt-40 pb-20">
+        <h2 class="mb-20">Benefity aplikácie</h2>
+        <div class="flex items-start justify-between gap-25">
+          <ul class="w-3/5">
+            <li class="border-b border-gray-200 m-0">
+              <button class="benefits-toggle selected" data-target="ben1">
+                <h4>AI Asistent, ktorý pomôže vybrať odborníka na Váš problém.</h4>
+                <img src="data:image/svg+xml,%3csvg%20width='24'%20height='25'%20viewBox='0%200%2024%2025'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11.9999%2013.3954L15.7812%209.61414L16.8613%2010.6943L11.9999%2015.5557L7.13855%2010.6943L8.21869%209.61414L11.9999%2013.3954Z'%20fill='%231C2436'/%3e%3c/svg%3e" alt="Šípka" class="arrow-icon -rotate-90"/>
+              </button>
+            </li>
+            <li class="border-b border-gray-200 m-0">
+              <button class="benefits-toggle" data-target="ben2">
+                <h4>Možnosť vyžiadania okamžitej online pomoci</h4>
+                <img src="data:image/svg+xml,%3csvg%20width='24'%20height='25'%20viewBox='0%200%2024%2025'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11.9999%2013.3954L15.7812%209.61414L16.8613%2010.6943L11.9999%2015.5557L7.13855%2010.6943L8.21869%209.61414L11.9999%2013.3954Z'%20fill='%231C2436'/%3e%3c/svg%3e" alt="Šípka" class="arrow-icon"/>
+              </button>
+            </li>
+            <li class="border-b border-gray-200 m-0">
+              <button class="benefits-toggle" data-target="ben3">
+                <h4>Osobný profil, ktorý definuje Váš zdravotný stav</h4>
+                <img src="data:image/svg+xml,%3csvg%20width='24'%20height='25'%20viewBox='0%200%2024%2025'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11.9999%2013.3954L15.7812%209.61414L16.8613%2010.6943L11.9999%2015.5557L7.13855%2010.6943L8.21869%209.61414L11.9999%2013.3954Z'%20fill='%231C2436'/%3e%3c/svg%3e" alt="Šípka" class="arrow-icon"/>
+              </button>
+            </li>
+            <li class="border-b border-gray-200 m-0">
+              <button class="benefits-toggle" data-target="ben4">
+                <h4>Správa lekárovi, ako alternatívna komunikácia pre rôzne typy žiadostí</h4>
+                <img src="data:image/svg+xml,%3csvg%20width='24'%20height='25'%20viewBox='0%200%2024%2025'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11.9999%2013.3954L15.7812%209.61414L16.8613%2010.6943L11.9999%2015.5557L7.13855%2010.6943L8.21869%209.61414L11.9999%2013.3954Z'%20fill='%231C2436'/%3e%3c/svg%3e" alt="Šípka" class="arrow-icon"/>
+              </button>
+            </li>
+            <li class="border-b border-gray-200 m-0">
+              <button class="benefits-toggle" data-target="ben5">
+                <h4>Možnosť vyžiadania okamžitej online pomoci</h4>
+                <img src="data:image/svg+xml,%3csvg%20width='24'%20height='25'%20viewBox='0%200%2024%2025'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11.9999%2013.3954L15.7812%209.61414L16.8613%2010.6943L11.9999%2015.5557L7.13855%2010.6943L8.21869%209.61414L11.9999%2013.3954Z'%20fill='%231C2436'/%3e%3c/svg%3e" alt="Šípka" class="arrow-icon"/>
+              </button>
+            </li>
+            <li class="border-b border-gray-200 m-0">
+              <button class="benefits-toggle" data-target="ben6">
+                <h4>Osobný profil, ktorý definuje Váš zdravotný stav</h4>
+                <img src="data:image/svg+xml,%3csvg%20width='24'%20height='25'%20viewBox='0%200%2024%2025'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11.9999%2013.3954L15.7812%209.61414L16.8613%2010.6943L11.9999%2015.5557L7.13855%2010.6943L8.21869%209.61414L11.9999%2013.3954Z'%20fill='%231C2436'/%3e%3c/svg%3e" alt="Šípka" class="arrow-icon"/>
+              </button>
+            </li>
+          </ul>
+          <div class="w-2/5">
+            <img src="/assets/benefits-ClIGiKJN.png" alt="Doktor" class="rounded-md shadow-xl mb-11"/>
+            <p id="ben1" class="benefits-content">Volajte Vášmu lekárovi, aj keď je obsadený. Tak zavoláte neskôr alebo si dohodnete online hovor. Pri tom môžete odosielať aj krátke textové správy. Snažíme sa, aby bola funkcia Správa liekov dostupná kdekoľvek.1</p>
+            <p id="ben2" class="benefits-content hidden">Volajte Vášmu lekárovi, aj keď je obsadený. Tak zavoláte neskôr alebo si dohodnete online hovor. Pri tom môžete odosielať aj krátke textové správy. Snažíme sa, aby bola funkcia Správa liekov dostupná kdekoľvek.2</p>
+            <p id="ben3" class="benefits-content hidden">Volajte Vášmu lekárovi, aj keď je obsadený. Tak zavoláte neskôr alebo si dohodnete online hovor. Pri tom môžete odosielať aj krátke textové správy. Snažíme sa, aby bola funkcia Správa liekov dostupná kdekoľvek.3</p>
+            <p id="ben4" class="benefits-content hidden">Volajte Vášmu lekárovi, aj keď je obsadený. Tak zavoláte neskôr alebo si dohodnete online hovor. Pri tom môžete odosielať aj krátke textové správy. Snažíme sa, aby bola funkcia Správa liekov dostupná kdekoľvek.4</p>
+            <p id="ben5" class="benefits-content hidden">Volajte Vášmu lekárovi, aj keď je obsadený. Tak zavoláte neskôr alebo si dohodnete online hovor. Pri tom môžete odosielať aj krátke textové správy. Snažíme sa, aby bola funkcia Správa liekov dostupná kdekoľvek.5</p>
+            <p id="ben6" class="benefits-content hidden">Volajte Vášmu lekárovi, aj keď je obsadený. Tak zavoláte neskôr alebo si dohodnete online hovor. Pri tom môžete odosielať aj krátke textové správy. Snažíme sa, aby bola funkcia Správa liekov dostupná kdekoľvek.6</p>
+          </div>
+        </div>
+      </section>
+      <!-- Funkcionality -->
+      <section class="px-50 py-33 text-center bg-[var(--background-alt)]">
+        <h2 class="mb-20">Čo Medicmate dokáže?</h2>
+        <div class="grid gap-6" style="grid-template-columns: repeat(5, 1fr); grid-template-rows: repeat(3, auto); grid-template-areas: 'A A A B B' 'C C E E E' 'D D E E E';">
+          <div class="card-function" style="grid-area: A;">
+            <div class="card-function-inner">
+              <img src="/assets/function-help-BEoHTxm9.png" alt="Okamžitá pomoc" />
+              <div class="flex flex-col items-start">
+                <h3 class="mb-4">Okamžitá pomoc</h3>
+                <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse cursus tortor eu lacus volutpat elementum.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-function" style="grid-area: B;">
+            <div class="card-function-inner">
+              <img src="/assets/function-message-OGvewhQT.png" alt="Správa" />
+              <div class="flex flex-col items-start">
+                <h3 class="mb-4">Správa</h3>
+                <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-function" style="grid-area: C;">
+            <div class="card-function-inner">
+              <img src="/assets/function-ai-W219w1gQ.png" alt="AI tool" />
+              <div class="flex flex-col items-start justify-start">
+                <h3 class="mb-4">AI tool</h3>
+                <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-function" style="grid-area: D;">
+            <div class="card-function-inner">
+              <img src="/assets/function-consult-B4C7U7UH.png" alt="Konzultácie" />
+              <div class="flex flex-col items-start">
+                <h3 class="mb-4">Konzultácie</h3>
+                <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-function" style="grid-area: E;">
+            <div class="card-function-inner">
+              <img src="/assets/function-specialist-BXcndwlx.png" alt="Výber špecialistov" />
+              <div class="flex flex-col items-start">
+                <h3 class="mb-4">Výber špecialistov</h3>
+                <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse cursus tortor eu lacus volutpat elementum.</p>
+              </div>
+            </div>
+          </div>
+         </div>
+      </section>
+      <!-- IconSekcia -->
+      <section class="relative px-50 py-30 text-center">
+        <h2 class="mb-20">Prečo sa nebáť použiť Medicmate</h2>
+        <div class="flex flex-row justify-center items-center gap-25">
+          <div class="flex-1 max-w-[20rem]">
+            <img src="/assets/iconSection1-B4rJKnxB.png" alt="Jednoduché ovládanie" class="mx-auto mb-4"/>
+            <h4 class="my-8">Jednoduché ovládanie</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed semper ligula, et pulv</p>
+          </div>
+          <div class="flex-1 max-w-[20rem]">
+            <img src="/assets/iconSection2-oxddhAGw.png" alt="Spoľahliví odborníci" class="mx-auto mb-4"/>
+            <h4 class="my-8">Spoľahliví odborníci</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed semper ligula, et pulv</p>
+          </div>
+          <div class="flex-1 max-w-[20rem]">
+            <img src="/assets/iconSection3-Bg7LZkBb.png" alt="Poradenstvo na mieru" class="mx-auto mb-4"/>
+            <h4 class="my-8">Poradenstvo na mieru</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed semper ligula, et pulv</p>
+          </div>
+        </div>
+        <img src="/assets/capsule-BPREK0jp.svg" alt="Tabletka" class="absolute -top-15 left-50"/>
+        <img src="/assets/stethoscope-CrKY1yIX.svg" alt="Steoskop" class="absolute -bottom-20 right-33"/>
+      </section>
+      <!-- O nas - Swiper -->
+      <section class="py-12 px-6 bg-[var(--background-alt)]">
+        <h2 class="text-center mb-6">Napísali o nás</h2>
+        <div class="flex justify-center items-center space-x-8 mb-6">
+          <button class="tab-btn active font-medium  border-b-2 border-blue-500 px-4 py-2 focus:outline-none" data-target="patients-swiper">Pacienti</button>
+          <button class="tab-btn font-medium  border-b-2 border-transparent px-4 py-2 hover:border-blue-500 focus:outline-none" data-target="doctors-swiper">Lekári</button>
+        </div>
+        <div id="patients-swiper" class="swiper-container relative">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide flex flex-col items-center p-6  rounded-md shadow-md">
+              <h3 class="text-lg font-semibold mb-2">Monika</h3>
+              <p class="text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus, est ut vehicula aliquam, enim tortor.</p>
+              <div class="flex space-x-1 mb-2">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFPSURBVHgBpVTbcYMwEBRC/yYdABXgDkgFcSoIqcDpwC7BLaSCJBXEJfifYVAHcf55ZA+LGSzJkjzZmRtJx2p1DyHGAtC2bUIWwuUhpL7vN8MwVCHcIME4jnec85cQrlcQqZYYUlhR13X5b0FgO0+EEDsfOXJ9RHQpDZr7Icuy8609zgjHcdzrPjTnzbUnohqhi2kURSnWCYq/YpeaJYtRxwlGUUoc8EtzHC7RvJOgBXVRbQ5FMU8QwDyVsOephqpW33eKLiFhj6itnORpQg6Vyr04wtZKw+xy0zQHpLENUULd3vM8r5Y+67VBCT4wbJhb7AtiBufWtfE+BLgVK6vf5kSEIwuDccm5Ray0bDwru0LXdYXus6Wskz5hazJqwtVmzg1BYeqxJzVK2CtSOi6+VciA1tOPAEHiHpgL7QV73wutOD/MQ0rUXxME4uoH/wFGbYUM4S1aewAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+              </div>
+            </div>
+            <div class="swiper-slide flex flex-col items-center p-6  rounded-md shadow-md">
+              <h3 class="text-lg font-semibold mb-2">Peter</h3>
+              <p class="text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus, est ut vehicula aliquam, enim tortor.</p>
+              <div class="flex space-x-1 mb-2">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFPSURBVHgBpVTbcYMwEBRC/yYdABXgDkgFcSoIqcDpwC7BLaSCJBXEJfifYVAHcf55ZA+LGSzJkjzZmRtJx2p1DyHGAtC2bUIWwuUhpL7vN8MwVCHcIME4jnec85cQrlcQqZYYUlhR13X5b0FgO0+EEDsfOXJ9RHQpDZr7Icuy8609zgjHcdzrPjTnzbUnohqhi2kURSnWCYq/YpeaJYtRxwlGUUoc8EtzHC7RvJOgBXVRbQ5FMU8QwDyVsOephqpW33eKLiFhj6itnORpQg6Vyr04wtZKw+xy0zQHpLENUULd3vM8r5Y+67VBCT4wbJhb7AtiBufWtfE+BLgVK6vf5kSEIwuDccm5Ray0bDwru0LXdYXus6Wskz5hazJqwtVmzg1BYeqxJzVK2CtSOi6+VciA1tOPAEHiHpgL7QV73wutOD/MQ0rUXxME4uoH/wFGbYUM4S1aewAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+              </div>
+            </div>
+            <div class="swiper-slide flex flex-col items-center p-6  rounded-md shadow-md">
+              <h3 class="text-lg font-semibold mb-2">Jaroslav</h3>
+              <p class="text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus, est ut vehicula aliquam, enim tortor.</p>
+              <div class="flex space-x-1 mb-2">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFPSURBVHgBpVTbcYMwEBRC/yYdABXgDkgFcSoIqcDpwC7BLaSCJBXEJfifYVAHcf55ZA+LGSzJkjzZmRtJx2p1DyHGAtC2bUIWwuUhpL7vN8MwVCHcIME4jnec85cQrlcQqZYYUlhR13X5b0FgO0+EEDsfOXJ9RHQpDZr7Icuy8609zgjHcdzrPjTnzbUnohqhi2kURSnWCYq/YpeaJYtRxwlGUUoc8EtzHC7RvJOgBXVRbQ5FMU8QwDyVsOephqpW33eKLiFhj6itnORpQg6Vyr04wtZKw+xy0zQHpLENUULd3vM8r5Y+67VBCT4wbJhb7AtiBufWtfE+BLgVK6vf5kSEIwuDccm5Ray0bDwru0LXdYXus6Wskz5hazJqwtVmzg1BYeqxJzVK2CtSOi6+VciA1tOPAEHiHpgL7QV73wutOD/MQ0rUXxME4uoH/wFGbYUM4S1aewAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+              </div>
+            </div>
+            <div class="swiper-slide flex flex-col items-center p-6  rounded-md shadow-md">
+              <h3 class="text-lg font-semibold mb-2">Matúš</h3>
+              <p class="text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus, est ut vehicula aliquam, enim tortor.</p>
+              <div class="flex space-x-1 mb-2">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFPSURBVHgBpVTbcYMwEBRC/yYdABXgDkgFcSoIqcDpwC7BLaSCJBXEJfifYVAHcf55ZA+LGSzJkjzZmRtJx2p1DyHGAtC2bUIWwuUhpL7vN8MwVCHcIME4jnec85cQrlcQqZYYUlhR13X5b0FgO0+EEDsfOXJ9RHQpDZr7Icuy8609zgjHcdzrPjTnzbUnohqhi2kURSnWCYq/YpeaJYtRxwlGUUoc8EtzHC7RvJOgBXVRbQ5FMU8QwDyVsOephqpW33eKLiFhj6itnORpQg6Vyr04wtZKw+xy0zQHpLENUULd3vM8r5Y+67VBCT4wbJhb7AtiBufWtfE+BLgVK6vf5kSEIwuDccm5Ray0bDwru0LXdYXus6Wskz5hazJqwtVmzg1BYeqxJzVK2CtSOi6+VciA1tOPAEHiHpgL7QV73wutOD/MQ0rUXxME4uoH/wFGbYUM4S1aewAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+              </div>
+            </div>
+            <div class="swiper-slide flex flex-col items-center p-6  rounded-md shadow-md">
+              <h3 class="text-lg font-semibold mb-2">Karolína</h3>
+              <p class="text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus, est ut vehicula aliquam, enim tortor.</p>
+              <div class="flex space-x-1 mb-2">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFPSURBVHgBpVTbcYMwEBRC/yYdABXgDkgFcSoIqcDpwC7BLaSCJBXEJfifYVAHcf55ZA+LGSzJkjzZmRtJx2p1DyHGAtC2bUIWwuUhpL7vN8MwVCHcIME4jnec85cQrlcQqZYYUlhR13X5b0FgO0+EEDsfOXJ9RHQpDZr7Icuy8609zgjHcdzrPjTnzbUnohqhi2kURSnWCYq/YpeaJYtRxwlGUUoc8EtzHC7RvJOgBXVRbQ5FMU8QwDyVsOephqpW33eKLiFhj6itnORpQg6Vyr04wtZKw+xy0zQHpLENUULd3vM8r5Y+67VBCT4wbJhb7AtiBufWtfE+BLgVK6vf5kSEIwuDccm5Ray0bDwru0LXdYXus6Wskz5hazJqwtVmzg1BYeqxJzVK2CtSOi6+VciA1tOPAEHiHpgL7QV73wutOD/MQ0rUXxME4uoH/wFGbYUM4S1aewAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFPSURBVHgBpVTbcYMwEBRC/yYdABXgDkgFcSoIqcDpwC7BLaSCJBXEJfifYVAHcf55ZA+LGSzJkjzZmRtJx2p1DyHGAtC2bUIWwuUhpL7vN8MwVCHcIME4jnec85cQrlcQqZYYUlhR13X5b0FgO0+EEDsfOXJ9RHQpDZr7Icuy8609zgjHcdzrPjTnzbUnohqhi2kURSnWCYq/YpeaJYtRxwlGUUoc8EtzHC7RvJOgBXVRbQ5FMU8QwDyVsOephqpW33eKLiFhj6itnORpQg6Vyr04wtZKw+xy0zQHpLENUULd3vM8r5Y+67VBCT4wbJhb7AtiBufWtfE+BLgVK6vf5kSEIwuDccm5Ray0bDwru0LXdYXus6Wskz5hazJqwtVmzg1BYeqxJzVK2CtSOi6+VciA1tOPAEHiHpgL7QV73wutOD/MQ0rUXxME4uoH/wFGbYUM4S1aewAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+              </div>
+            </div>
+            <div class="swiper-slide flex flex-col items-center p-6  rounded-md shadow-md">
+              <h3 class="text-lg font-semibold mb-2">Igor</h3>
+              <p class="text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus, est ut vehicula aliquam, enim tortor.</p>
+              <div class="flex space-x-1 mb-2">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+              </div>
+            </div>
+            <div class="swiper-slide flex flex-col items-center p-6  rounded-md shadow-md">
+              <h3 class="text-lg font-semibold mb-2">Monika</h3>
+              <p class="text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus, est ut vehicula aliquam, enim tortor.</p>
+              <div class="flex space-x-1 mb-2">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFPSURBVHgBpVTbcYMwEBRC/yYdABXgDkgFcSoIqcDpwC7BLaSCJBXEJfifYVAHcf55ZA+LGSzJkjzZmRtJx2p1DyHGAtC2bUIWwuUhpL7vN8MwVCHcIME4jnec85cQrlcQqZYYUlhR13X5b0FgO0+EEDsfOXJ9RHQpDZr7Icuy8609zgjHcdzrPjTnzbUnohqhi2kURSnWCYq/YpeaJYtRxwlGUUoc8EtzHC7RvJOgBXVRbQ5FMU8QwDyVsOephqpW33eKLiFhj6itnORpQg6Vyr04wtZKw+xy0zQHpLENUULd3vM8r5Y+67VBCT4wbJhb7AtiBufWtfE+BLgVK6vf5kSEIwuDccm5Ray0bDwru0LXdYXus6Wskz5hazJqwtVmzg1BYeqxJzVK2CtSOi6+VciA1tOPAEHiHpgL7QV73wutOD/MQ0rUXxME4uoH/wFGbYUM4S1aewAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 flex items-center justify-center space-x-6">
+            <div id="patients-button-prev" class="w-10 h-10 bg-black/50 rounded-full flex items-center justify-center  cursor-pointer z-20">
+              <img src="data:image/svg+xml,%3csvg%20width='20'%20height='16'%20viewBox='0%200%2020%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1%208H19M8%2015L1%208L8%2015ZM1%208L8%201L1%208Z'%20stroke='white'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="Šípka vľavo" class=""/>
+            </div>
+            <div id="patients-button-next" class="w-10 h-10 bg-black/50 rounded-full flex items-center justify-center  cursor-pointer z-20">
+              <img src="data:image/svg+xml,%3csvg%20width='20'%20height='16'%20viewBox='0%200%2020%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1%208H19M8%2015L1%208L8%2015ZM1%208L8%201L1%208Z'%20stroke='white'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="Šípka vpravo" class="rotate-180"/>
+            </div>
+          </div>
+        </div>
+        <div id="doctors-swiper" class="swiper-container relative hidden">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide flex flex-col items-center p-6  rounded-md shadow-md">
+              <h3 class="text-lg font-semibold mb-2">Ján</h3>
+              <p class="text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus, est ut vehicula aliquam, enim tortor.</p>
+              <div class="flex space-x-1 mb-2">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFPSURBVHgBpVTbcYMwEBRC/yYdABXgDkgFcSoIqcDpwC7BLaSCJBXEJfifYVAHcf55ZA+LGSzJkjzZmRtJx2p1DyHGAtC2bUIWwuUhpL7vN8MwVCHcIME4jnec85cQrlcQqZYYUlhR13X5b0FgO0+EEDsfOXJ9RHQpDZr7Icuy8609zgjHcdzrPjTnzbUnohqhi2kURSnWCYq/YpeaJYtRxwlGUUoc8EtzHC7RvJOgBXVRbQ5FMU8QwDyVsOephqpW33eKLiFhj6itnORpQg6Vyr04wtZKw+xy0zQHpLENUULd3vM8r5Y+67VBCT4wbJhb7AtiBufWtfE+BLgVK6vf5kSEIwuDccm5Ray0bDwru0LXdYXus6Wskz5hazJqwtVmzg1BYeqxJzVK2CtSOi6+VciA1tOPAEHiHpgL7QV73wutOD/MQ0rUXxME4uoH/wFGbYUM4S1aewAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+              </div>
+            </div>
+            <div class="swiper-slide flex flex-col items-center p-6  rounded-md shadow-md">
+              <h3 class="text-lg font-semibold mb-2">Danka</h3>
+              <p class="text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus, est ut vehicula aliquam, enim tortor.</p>
+              <div class="flex space-x-1 mb-2">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFPSURBVHgBpVTbcYMwEBRC/yYdABXgDkgFcSoIqcDpwC7BLaSCJBXEJfifYVAHcf55ZA+LGSzJkjzZmRtJx2p1DyHGAtC2bUIWwuUhpL7vN8MwVCHcIME4jnec85cQrlcQqZYYUlhR13X5b0FgO0+EEDsfOXJ9RHQpDZr7Icuy8609zgjHcdzrPjTnzbUnohqhi2kURSnWCYq/YpeaJYtRxwlGUUoc8EtzHC7RvJOgBXVRbQ5FMU8QwDyVsOephqpW33eKLiFhj6itnORpQg6Vyr04wtZKw+xy0zQHpLENUULd3vM8r5Y+67VBCT4wbJhb7AtiBufWtfE+BLgVK6vf5kSEIwuDccm5Ray0bDwru0LXdYXus6Wskz5hazJqwtVmzg1BYeqxJzVK2CtSOi6+VciA1tOPAEHiHpgL7QV73wutOD/MQ0rUXxME4uoH/wFGbYUM4S1aewAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+              </div>
+            </div>
+            <div class="swiper-slide flex flex-col items-center p-6  rounded-md shadow-md">
+              <h3 class="text-lg font-semibold mb-2">Matúš</h3>
+              <p class="text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus, est ut vehicula aliquam, enim tortor.</p>
+              <div class="flex space-x-1 mb-2">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFPSURBVHgBpVTbcYMwEBRC/yYdABXgDkgFcSoIqcDpwC7BLaSCJBXEJfifYVAHcf55ZA+LGSzJkjzZmRtJx2p1DyHGAtC2bUIWwuUhpL7vN8MwVCHcIME4jnec85cQrlcQqZYYUlhR13X5b0FgO0+EEDsfOXJ9RHQpDZr7Icuy8609zgjHcdzrPjTnzbUnohqhi2kURSnWCYq/YpeaJYtRxwlGUUoc8EtzHC7RvJOgBXVRbQ5FMU8QwDyVsOephqpW33eKLiFhj6itnORpQg6Vyr04wtZKw+xy0zQHpLENUULd3vM8r5Y+67VBCT4wbJhb7AtiBufWtfE+BLgVK6vf5kSEIwuDccm5Ray0bDwru0LXdYXus6Wskz5hazJqwtVmzg1BYeqxJzVK2CtSOi6+VciA1tOPAEHiHpgL7QV73wutOD/MQ0rUXxME4uoH/wFGbYUM4S1aewAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+              </div>
+            </div>
+            <div class="swiper-slide flex flex-col items-center p-6  rounded-md shadow-md">
+              <h3 class="text-lg font-semibold mb-2">Karolína</h3>
+              <p class="text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus, est ut vehicula aliquam, enim tortor.</p>
+              <div class="flex space-x-1 mb-2">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFPSURBVHgBpVTbcYMwEBRC/yYdABXgDkgFcSoIqcDpwC7BLaSCJBXEJfifYVAHcf55ZA+LGSzJkjzZmRtJx2p1DyHGAtC2bUIWwuUhpL7vN8MwVCHcIME4jnec85cQrlcQqZYYUlhR13X5b0FgO0+EEDsfOXJ9RHQpDZr7Icuy8609zgjHcdzrPjTnzbUnohqhi2kURSnWCYq/YpeaJYtRxwlGUUoc8EtzHC7RvJOgBXVRbQ5FMU8QwDyVsOephqpW33eKLiFhj6itnORpQg6Vyr04wtZKw+xy0zQHpLENUULd3vM8r5Y+67VBCT4wbJhb7AtiBufWtfE+BLgVK6vf5kSEIwuDccm5Ray0bDwru0LXdYXus6Wskz5hazJqwtVmzg1BYeqxJzVK2CtSOi6+VciA1tOPAEHiHpgL7QV73wutOD/MQ0rUXxME4uoH/wFGbYUM4S1aewAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFPSURBVHgBpVTbcYMwEBRC/yYdABXgDkgFcSoIqcDpwC7BLaSCJBXEJfifYVAHcf55ZA+LGSzJkjzZmRtJx2p1DyHGAtC2bUIWwuUhpL7vN8MwVCHcIME4jnec85cQrlcQqZYYUlhR13X5b0FgO0+EEDsfOXJ9RHQpDZr7Icuy8609zgjHcdzrPjTnzbUnohqhi2kURSnWCYq/YpeaJYtRxwlGUUoc8EtzHC7RvJOgBXVRbQ5FMU8QwDyVsOephqpW33eKLiFhj6itnORpQg6Vyr04wtZKw+xy0zQHpLENUULd3vM8r5Y+67VBCT4wbJhb7AtiBufWtfE+BLgVK6vf5kSEIwuDccm5Ray0bDwru0LXdYXus6Wskz5hazJqwtVmzg1BYeqxJzVK2CtSOi6+VciA1tOPAEHiHpgL7QV73wutOD/MQ0rUXxME4uoH/wFGbYUM4S1aewAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+              </div>
+            </div>
+            <div class="swiper-slide flex flex-col items-center p-6  rounded-md shadow-md">
+              <h3 class="text-lg font-semibold mb-2">Monika</h3>
+              <p class="text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus, est ut vehicula aliquam, enim tortor.</p>
+              <div class="flex space-x-1 mb-2">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFPSURBVHgBpVTbcYMwEBRC/yYdABXgDkgFcSoIqcDpwC7BLaSCJBXEJfifYVAHcf55ZA+LGSzJkjzZmRtJx2p1DyHGAtC2bUIWwuUhpL7vN8MwVCHcIME4jnec85cQrlcQqZYYUlhR13X5b0FgO0+EEDsfOXJ9RHQpDZr7Icuy8609zgjHcdzrPjTnzbUnohqhi2kURSnWCYq/YpeaJYtRxwlGUUoc8EtzHC7RvJOgBXVRbQ5FMU8QwDyVsOephqpW33eKLiFhj6itnORpQg6Vyr04wtZKw+xy0zQHpLENUULd3vM8r5Y+67VBCT4wbJhb7AtiBufWtfE+BLgVK6vf5kSEIwuDccm5Ray0bDwru0LXdYXus6Wskz5hazJqwtVmzg1BYeqxJzVK2CtSOi6+VciA1tOPAEHiHpgL7QV73wutOD/MQ0rUXxME4uoH/wFGbYUM4S1aewAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+              </div>
+            </div>
+            <div class="swiper-slide flex flex-col items-center p-6  rounded-md shadow-md">
+              <h3 class="text-lg font-semibold mb-2">Štefan</h3>
+              <p class="text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus, est ut vehicula aliquam, enim tortor.</p>
+              <div class="flex space-x-1 mb-2">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFPSURBVHgBpVTbcYMwEBRC/yYdABXgDkgFcSoIqcDpwC7BLaSCJBXEJfifYVAHcf55ZA+LGSzJkjzZmRtJx2p1DyHGAtC2bUIWwuUhpL7vN8MwVCHcIME4jnec85cQrlcQqZYYUlhR13X5b0FgO0+EEDsfOXJ9RHQpDZr7Icuy8609zgjHcdzrPjTnzbUnohqhi2kURSnWCYq/YpeaJYtRxwlGUUoc8EtzHC7RvJOgBXVRbQ5FMU8QwDyVsOephqpW33eKLiFhj6itnORpQg6Vyr04wtZKw+xy0zQHpLENUULd3vM8r5Y+67VBCT4wbJhb7AtiBufWtfE+BLgVK6vf5kSEIwuDccm5Ray0bDwru0LXdYXus6Wskz5hazJqwtVmzg1BYeqxJzVK2CtSOi6+VciA1tOPAEHiHpgL7QV73wutOD/MQ0rUXxME4uoH/wFGbYUM4S1aewAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+              </div>
+            </div>
+            <div class="swiper-slide flex flex-col items-center p-6  rounded-md shadow-md">
+              <h3 class="text-lg font-semibold mb-2">Karolína</h3>
+              <p class="text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus, est ut vehicula aliquam, enim tortor.</p>
+              <div class="flex space-x-1 mb-2">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgBrVXLUcNADH1SPgcuCR24hPiYgQPpIHSQDqADUgItUEGgAjODPTkmHcQdYK6JvULrmBls79gGRzOe9WjfPkvaJxnoYBJgap8uWO4CykZYnkZY4VKWRXQwEe26YFsjPH3gThdPgFnx3o+QmB5+3gdMT634pk29CM+M6VCK4CjXtECC/0SYjXhd9aVjPDadIVsXEq0RwdP8pkyYEMTTvamI9dXlomntdUkEFBvBF8QkyhEbxp6OIWYDoo0CPPSzOBO5z2soW62VoaAHacwsC5rrmqcwLxznVP5kIvLOV+JbjpyrCtCaPvMvqbSQvQxvyx3klE0aYUOgJZrIIG/DG9QwTtmwUOsgYNDE5XdGqL0r6GAukdcidPar5Idq3ZEOMat9pHaWyiAV+SsPxFcV+PYSmrBOMyEFNmU7slzRpiFWds9idKQFrYQF0Vp2zRPaYhT72YQ5j/pt926x2Oqv4RvmLZQ732Ha3QAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFPSURBVHgBpVTbcYMwEBRC/yYdABXgDkgFcSoIqcDpwC7BLaSCJBXEJfifYVAHcf55ZA+LGSzJkjzZmRtJx2p1DyHGAtC2bUIWwuUhpL7vN8MwVCHcIME4jnec85cQrlcQqZYYUlhR13X5b0FgO0+EEDsfOXJ9RHQpDZr7Icuy8609zgjHcdzrPjTnzbUnohqhi2kURSnWCYq/YpeaJYtRxwlGUUoc8EtzHC7RvJOgBXVRbQ5FMU8QwDyVsOephqpW33eKLiFhj6itnORpQg6Vyr04wtZKw+xy0zQHpLENUULd3vM8r5Y+67VBCT4wbJhb7AtiBufWtfE+BLgVK6vf5kSEIwuDccm5Ray0bDwru0LXdYXus6Wskz5hazJqwtVmzg1BYeqxJzVK2CtSOi6+VciA1tOPAEHiHpgL7QV73wutOD/MQ0rUXxME4uoH/wFGbYUM4S1aewAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFPSURBVHgBpVTbcYMwEBRC/yYdABXgDkgFcSoIqcDpwC7BLaSCJBXEJfifYVAHcf55ZA+LGSzJkjzZmRtJx2p1DyHGAtC2bUIWwuUhpL7vN8MwVCHcIME4jnec85cQrlcQqZYYUlhR13X5b0FgO0+EEDsfOXJ9RHQpDZr7Icuy8609zgjHcdzrPjTnzbUnohqhi2kURSnWCYq/YpeaJYtRxwlGUUoc8EtzHC7RvJOgBXVRbQ5FMU8QwDyVsOephqpW33eKLiFhj6itnORpQg6Vyr04wtZKw+xy0zQHpLENUULd3vM8r5Y+67VBCT4wbJhb7AtiBufWtfE+BLgVK6vf5kSEIwuDccm5Ray0bDwru0LXdYXus6Wskz5hazJqwtVmzg1BYeqxJzVK2CtSOi6+VciA1tOPAEHiHpgL7QV73wutOD/MQ0rUXxME4uoH/wFGbYUM4S1aewAAAABJRU5ErkJggg==" alt="Star" class="w-4 h-4"/>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 flex items-center justify-center space-x-6">
+            <div id="doctors-button-prev" class="w-10 h-10 bg-black/50 rounded-full flex items-center justify-center  cursor-pointer z-20">
+              <img src="data:image/svg+xml,%3csvg%20width='20'%20height='16'%20viewBox='0%200%2020%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1%208H19M8%2015L1%208L8%2015ZM1%208L8%201L1%208Z'%20stroke='white'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="Šípka vľavo" class=""/>
+            </div>
+            <div id="doctors-button-next" class="w-10 h-10 bg-black/50 rounded-full flex items-center justify-center  cursor-pointer z-20">
+              <img src="data:image/svg+xml,%3csvg%20width='20'%20height='16'%20viewBox='0%200%2020%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1%208H19M8%2015L1%208L8%2015ZM1%208L8%201L1%208Z'%20stroke='white'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="Šípka vpravo" class="rotate-180"/>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Pridaj sa -->
+      <section class="flex items-stretch gap-8 px-50 py-12 min-h-[400px]">
+        <div class="flex flex-col justify-between w-1/2">
+          <h2>Si kvalifikovaný lekár a chceš byť aj ty súčasťou moderného zdravotníctva? Pridaj sa k medimate!</h2>
+          <button class="btn-gradient w-md"><a href="#">Registrovať</a></button>
+        </div>
+        <div class="w-1/2 flex items-center justify-center">
+          <img src="/assets/join-us-Cs5LYlpH.png" alt="Lekár používajúci mobil" class="rounded-md shadow-md"/>
+        </div>
+      </section>
+      <!-- Faq -->
+      <section class="px-6 py-12 w-full max-w-3xl mx-auto">
+        <h2 class="mb-20 text-center">FAQ</h2>
+        <ul class="space-y-2">
+          <li class="li-item">
+            <button class="faq-toggle" data-target="faq1">
+              <h4>Kde si môžem stiahnuť aplikáciu?</h4>
+              <img src="data:image/svg+xml,%3csvg%20width='24'%20height='25'%20viewBox='0%200%2024%2025'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11.9999%2013.3954L15.7812%209.61414L16.8613%2010.6943L11.9999%2015.5557L7.13855%2010.6943L8.21869%209.61414L11.9999%2013.3954Z'%20fill='%231C2436'/%3e%3c/svg%3e" alt="Šípka" class="arrow-icon"/>
+            </button>
+            <div id="faq1" class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+              <p class="py-2 ps-8">Aplikáciu si môžete stiahnuť z App Store alebo Google Play zdarma.</p>
+            </div>
+          </li>
+          <li class="li-item">
+            <button class="faq-toggle" data-target="faq2">
+              <h4>Koľko stojí aplikácia?</h4>
+              <img src="data:image/svg+xml,%3csvg%20width='24'%20height='25'%20viewBox='0%200%2024%2025'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11.9999%2013.3954L15.7812%209.61414L16.8613%2010.6943L11.9999%2015.5557L7.13855%2010.6943L8.21869%209.61414L11.9999%2013.3954Z'%20fill='%231C2436'/%3e%3c/svg%3e" alt="Šípka" class="arrow-icon"/>
+            </button>
+            <div id="faq2" class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+              <p class="py-2 ps-8">Aplikácia je v základnej verzii úplne zadarmo. Prémiové funkcie sú spoplatnené.</p>
+            </div>
+          </li>
+          <li class="li-item">
+            <button class="faq-toggle" data-target="faq3">
+              <h4>Potrebujem nejaké potvrdenie od svojho lekára?</h4>
+              <img src="data:image/svg+xml,%3csvg%20width='24'%20height='25'%20viewBox='0%200%2024%2025'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11.9999%2013.3954L15.7812%209.61414L16.8613%2010.6943L11.9999%2015.5557L7.13855%2010.6943L8.21869%209.61414L11.9999%2013.3954Z'%20fill='%231C2436'/%3e%3c/svg%3e" alt="Šípka" class="arrow-icon"/>
+            </button>
+            <div id="faq3" class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+              <p class="py-2 ps-8">Nie, aplikácia je dostupná bez potreby ďalšieho potvrdenia.</p>
+            </div>
+          </li>
+          <li class="li-item">
+            <button class="faq-toggle" data-target="faq4">
+              <h4>Aké problémy rieši lekár?</h4>
+              <img src="data:image/svg+xml,%3csvg%20width='24'%20height='25'%20viewBox='0%200%2024%2025'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11.9999%2013.3954L15.7812%209.61414L16.8613%2010.6943L11.9999%2015.5557L7.13855%2010.6943L8.21869%209.61414L11.9999%2013.3954Z'%20fill='%231C2436'/%3e%3c/svg%3e" alt="Šípka" class="arrow-icon"/>
+            </button>
+            <div id="faq4" class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+              <p class="py-2 ps-8">Lekári diagnostikujú a liečia bežné akútne zdravotné problémy, ako sú infekcie a bolesti, a zároveň poskytujú prevenciu a starostlivosť pri chronických ochoreniach.</p>
+            </div>
+          </li>
+          <li class="li-item">
+            <button class="faq-toggle" data-target="faq5">
+              <h4>V ktorých hodinách je lekár k dispozícii?</h4>
+              <img src="data:image/svg+xml,%3csvg%20width='24'%20height='25'%20viewBox='0%200%2024%2025'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11.9999%2013.3954L15.7812%209.61414L16.8613%2010.6943L11.9999%2015.5557L7.13855%2010.6943L8.21869%209.61414L11.9999%2013.3954Z'%20fill='%231C2436'/%3e%3c/svg%3e" alt="Šípka" class="arrow-icon"/>
+            </button>
+            <div id="faq5" class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+              <p class="py-2 ps-8">Lekár je obvykle dostupný v pracovných dňoch od 8:00 do 16:00, v prípade urgentných situácií aj mimo týchto hodín.</p>
+            </div>
+          </li>
+          <li class="li-item">
+            <button class="faq-toggle " data-target="faq6">
+              <h4>Je aplikácia vhodná pre starších ľudí?</h4>
+              <img src="data:image/svg+xml,%3csvg%20width='24'%20height='25'%20viewBox='0%200%2024%2025'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11.9999%2013.3954L15.7812%209.61414L16.8613%2010.6943L11.9999%2015.5557L7.13855%2010.6943L8.21869%209.61414L11.9999%2013.3954Z'%20fill='%231C2436'/%3e%3c/svg%3e" alt="Šípka" class="arrow-icon"/>
+            </button>
+            <div id="faq6" class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+              <p class="py-2 ps-8">Áno, aplikácia je navrhnutá tak, aby sa dala používať ľahko aj u starších ľudí.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- Kontaktny formular -->
+      <section class="flex items-start justify-between ps-51 pt-28 mb-6">
+        <div class="w-1/2 pr-43.5">
+          <h2 class="mb-11.5">Ste lekár? Buďte aj Vy súčasťou Medicmate</h2>
+          <img src="data:image/svg+xml,%3csvg%20width='14'%20height='17'%20viewBox='0%200%2014%2017'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11.8614%2012.0977L7%2016.959L2.13861%2012.0977C1.17714%2011.1362%200.522365%209.91116%200.257098%208.57754C-0.00816844%207.24393%200.127984%205.8616%200.648339%204.60536C1.16869%203.34912%202.04988%202.2754%203.18047%201.51997C4.31105%200.764538%205.64026%200.361328%207%200.361328C8.35975%200.361328%209.68895%200.764538%2010.8195%201.51997C11.9501%202.2754%2012.8313%203.34912%2013.3517%204.60536C13.872%205.8616%2014.0082%207.24393%2013.7429%208.57754C13.4776%209.91116%2012.8229%2011.1362%2011.8614%2012.0977ZM7%2010.2918C7.81039%2010.2918%208.58758%209.9699%209.16061%209.39687C9.73363%208.82384%2010.0556%208.04665%2010.0556%207.23627C10.0556%206.42588%209.73363%205.64869%209.16061%205.07566C8.58758%204.50264%207.81039%204.18071%207%204.18071C6.18962%204.18071%205.41243%204.50264%204.8394%205.07566C4.26637%205.64869%203.94445%206.42588%203.94445%207.23627C3.94445%208.04665%204.26637%208.82384%204.8394%209.39687C5.41243%209.9699%206.18962%2010.2918%207%2010.2918ZM7%208.76405C6.59481%208.76405%206.20621%208.60308%205.9197%208.31657C5.63319%208.03006%205.47223%207.64146%205.47223%207.23627C5.47223%206.83108%205.63319%206.44248%205.9197%206.15597C6.20621%205.86945%206.59481%205.70849%207%205.70849C7.40519%205.70849%207.79379%205.86945%208.0803%206.15597C8.36682%206.44248%208.52778%206.83108%208.52778%207.23627C8.52778%207.64146%208.36682%208.03006%208.0803%208.31657C7.79379%208.60308%207.40519%208.76405%207%208.76405Z'%20fill='%23ACB4C3'/%3e%3c/svg%3e" alt="Adresa" class="w-6 h-6 inline"/>
+          <span class="text-[0.875rem] font-medium ms-2">Adresa</span>
+          <p class="my-3 text-[1rem]">
+            Názov firmy s.r.o.<br>
+            Adresa 123, 081 00 Bratislava<br>
+          </p>
+          <p class="mt-5 text-[1rem] text-[var(--color-green-highlight)]">
+            +421 972 456 789<br>
+            <a href="mailto:mail@medimate.sk" class="underline hover:">mail@medimate.sk</a>
+          </p>
+        </div>
+        <div class="w-1/2 bg-[var(--background-alt)] p-18">
+          <form class="space-y-4">
+            <div>
+              <label for="name" class="block text-sm font-medium ">Meno</label>
+              <input id="name" type="text" class="form" placeholder="Meno">
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium ">Email</label>
+              <input id="email" type="email" class="form" placeholder="Email">
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium ">Správa</label>
+              <textarea id="message" class="form" rows="4" placeholder="Vaša správa"></textarea>
+            </div>
+            <div>
+              <input id="gdpr" type="checkbox" class="mr-2">
+              <label for="gdpr" class="text-sm ">Súhlasím so 
+                <span class="text-[var(--color-green-highlight)]">spracovaním osobných údajov</span>
+              </label>
+            </div>
+            <button type="submit" class="btn-gradient w-md">Odoslať</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="px-6 py-8">
+      <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center space-x-2">
+          <img src="/assets/medimate-logo-BsVEjnTA.svg" alt="MediMate" class="h-15.5"/>
+        </div>
+        <div class="space-x-6 text-[0.938rem]">
+          <a href="#">COOKIES</a>
+          <a href="#">OSOBNÉ ÚDAJE A COOKIES</a>
+          <a href="#">OBCHODNÉ PODMIENKY</a>
+        </div>
+      </div>
+      <hr class="mb-4 border-gray-200"/>
+      <div class="flex items-center justify-between text-sm">
+        <div class="flex space-x-4">
+          <a href="https://www.facebook.com/" aria-label="Facebook">
+            <img src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.00022%200.361328C3.78126%200.361328%200.361328%203.78126%200.361328%208.00022C0.361328%2011.8128%203.15487%2014.973%206.80702%2015.5467V10.2079H4.86674V8.00022H6.80702V6.31737C6.80702%204.40306%207.94674%203.34584%209.69223%203.34584C10.5279%203.34584%2011.4018%203.4948%2011.4018%203.4948V5.37397H10.4393C9.4898%205.37397%209.19417%205.96293%209.19417%206.56716V8.00022H11.3124L10.974%2010.2079H9.19417V15.5467C12.8456%2014.9738%2015.6391%2011.812%2015.6391%208.00022C15.6391%203.78126%2012.2192%200.361328%208.00022%200.361328Z'%20fill='%231C2436'/%3e%3c/svg%3e" alt="Facebook"/>
+          </a>
+          <a href="https://www.instagram.com/" aria-label="Instagram">
+            <img src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.00022%200.361328C10.0757%200.361328%2010.3347%200.368967%2011.149%200.407161C11.9625%200.445356%2012.5163%200.572925%2013.0037%200.76237C13.5079%200.956398%2013.9326%201.21918%2014.3573%201.64313C14.7457%202.025%2015.0463%202.48692%2015.2381%202.99674C15.4267%203.48334%2015.5551%204.03792%2015.5933%204.85147C15.6292%205.66577%2015.6391%205.92473%2015.6391%208.00022C15.6391%2010.0757%2015.6315%2010.3347%2015.5933%2011.149C15.5551%2011.9625%2015.4267%2012.5163%2015.2381%2013.0037C15.0468%2013.5138%2014.7462%2013.9758%2014.3573%2014.3573C13.9753%2014.7456%2013.5134%2015.0461%2013.0037%2015.2381C12.5171%2015.4267%2011.9625%2015.5551%2011.149%2015.5933C10.3347%2015.6292%2010.0757%2015.6391%208.00022%2015.6391C5.92473%2015.6391%205.66577%2015.6315%204.85147%2015.5933C4.03793%2015.5551%203.48411%2015.4267%202.99674%2015.2381C2.48672%2015.0467%202.02472%2014.7461%201.64313%2014.3573C1.25462%2013.9755%200.954054%2013.5136%200.76237%2013.0037C0.572925%2012.5171%200.445356%2011.9625%200.407161%2011.149C0.371259%2010.3347%200.361328%2010.0757%200.361328%208.00022C0.361328%205.92473%200.368967%205.66577%200.407161%204.85147C0.445356%204.03716%200.572925%203.48411%200.76237%202.99674C0.953523%202.4866%201.25416%202.02456%201.64313%201.64313C2.02483%201.25449%202.48679%200.953899%202.99674%200.76237C3.48411%200.572925%204.03716%200.445356%204.85147%200.407161C5.66577%200.371259%205.92473%200.361328%208.00022%200.361328ZM8.00022%204.18077C6.98724%204.18077%206.01575%204.58318%205.29946%205.29946C4.58318%206.01575%204.18077%206.98724%204.18077%208.00022C4.18077%209.0132%204.58318%209.98469%205.29946%2010.701C6.01575%2011.4173%206.98724%2011.8197%208.00022%2011.8197C9.0132%2011.8197%209.98469%2011.4173%2010.701%2010.701C11.4173%209.98469%2011.8197%209.0132%2011.8197%208.00022C11.8197%206.98724%2011.4173%206.01575%2010.701%205.29946C9.98469%204.58318%209.0132%204.18077%208.00022%204.18077ZM12.9655%203.9898C12.9655%203.73656%2012.8649%203.49368%2012.6858%203.31461C12.5068%203.13554%2012.2639%203.03494%2012.0106%203.03494C11.7574%203.03494%2011.5145%203.13554%2011.3354%203.31461C11.1564%203.49368%2011.0558%203.73656%2011.0558%203.9898C11.0558%204.24305%2011.1564%204.48592%2011.3354%204.66499C11.5145%204.84406%2011.7574%204.94466%2012.0106%204.94466C12.2639%204.94466%2012.5068%204.84406%2012.6858%204.66499C12.8649%204.48592%2012.9655%204.24305%2012.9655%203.9898ZM8.00022%205.70855C8.60801%205.70855%209.1909%205.94999%209.62067%206.37976C10.0504%206.80953%2010.2919%207.39243%2010.2919%208.00022C10.2919%208.608%2010.0504%209.1909%209.62067%209.62067C9.1909%2010.0504%208.60801%2010.2919%208.00022%2010.2919C7.39243%2010.2919%206.80954%2010.0504%206.37976%209.62067C5.94999%209.1909%205.70855%208.608%205.70855%208.00022C5.70855%207.39243%205.94999%206.80953%206.37976%206.37976C6.80954%205.94999%207.39243%205.70855%208.00022%205.70855Z'%20fill='%231C2436'/%3e%3c/svg%3e" alt="Instagram"/>
+          </a>
+          <a href="https://x.com" aria-label="Twitter">
+            <img src="data:image/svg+xml,%3csvg%20width='16'%20height='14'%20viewBox='0%200%2016%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M15.7626%202.15428C15.1795%202.41224%2014.561%202.58166%2013.9278%202.65692C14.5952%202.25774%2015.0948%201.6295%2015.3333%200.88928C14.7069%201.26206%2014.0202%201.52331%2013.3044%201.66463C12.8237%201.15021%2012.1864%200.809044%2011.4917%200.694172C10.797%200.579299%2010.0838%200.697155%209.46305%201.02942C8.84226%201.36168%208.34863%201.88973%208.05891%202.53148C7.76918%203.17323%207.6996%203.89272%207.86097%204.5781C6.59071%204.51443%205.34803%204.18433%204.21362%203.60923C3.07921%203.03413%202.07843%202.22689%201.27625%201.23991C0.992304%201.72761%200.84309%202.28202%200.843888%202.84636C0.843888%203.954%201.40764%204.93254%202.26472%205.50546C1.75751%205.48949%201.26145%205.35251%200.817916%205.10595V5.14567C0.818069%205.88336%201.07334%206.59829%201.54044%207.16925C2.00754%207.74022%202.65773%208.13207%203.38076%208.27838C2.90991%208.40597%202.41621%208.42478%201.93701%208.33337C2.14087%208.96834%202.5382%209.52367%203.07337%209.92158C3.60854%2010.3195%204.25475%2010.5401%204.92153%2010.5525C4.25884%2011.0729%203.50007%2011.4577%202.68859%2011.6847C1.87711%2011.9117%201.02885%2011.9766%200.192291%2011.8755C1.65262%2012.8147%203.35257%2013.3133%205.08882%2013.3116C10.9654%2013.3116%2014.1791%208.44338%2014.1791%204.22136C14.1791%204.08386%2014.1753%203.94483%2014.1692%203.80886C14.7947%203.35677%2015.3346%202.79673%2015.7634%202.15504L15.7626%202.15428Z'%20fill='%231C2436'/%3e%3c/svg%3e" alt="Twitter"/>
+          </a>
+        </div>
+        <div>&copy; 2023 MediMate. Web a novú aplikáciu od 
+          <a href="https://onlima.sk" class="hover:text-black">Onlima.sk</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
