@@ -34,27 +34,52 @@ document.querySelectorAll('.benefits-toggle').forEach(btn => {
 });
 
 // Swiper
-new Swiper('#patients-swiper', {
+const patientsSwiper = new Swiper('#patients-swiper', {
   slidesPerView: 5,
   centeredSlides: true,
   spaceBetween: 12,
   loop: true,
-  navigation: { nextEl: '#patients-button-next', prevEl: '#patients-button-prev' },
+  loopedSlides: 7
 });
-new Swiper('#doctors-swiper', {
+
+const doctorsSwiper = new Swiper('#doctors-swiper', {
   slidesPerView: 5,
   centeredSlides: true,
   spaceBetween: 12,
   loop: true,
-  navigation: { nextEl: '#doctors-button-next', prevEl: '#doctors-button-prev' },
+  loopedSlides: 7,
+  loopAdditionalSlides: 1,
+});
+
+document.getElementById('patients-button-next').addEventListener('click', () => {
+  patientsSwiper.slideNext();
+});
+document.getElementById('patients-button-prev').addEventListener('click', () => {
+  patientsSwiper.slidePrev();
+});
+
+document.getElementById('doctors-button-next').addEventListener('click', () => {
+  doctorsSwiper.slideNext();
+});
+document.getElementById('doctors-button-prev').addEventListener('click', () => {
+  doctorsSwiper.slidePrev();
 });
 
 // Swiper tabs
 document.querySelectorAll('.tab-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('.swiper-container').forEach(container => container.classList.add('hidden'));
-    document.getElementById(btn.dataset.target).classList.remove('hidden');
-    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+    const target = btn.getAttribute('data-target');
+    const targetContainer = document.getElementById(target);
+    targetContainer.classList.remove('hidden');
+    
+    if (target === 'doctors-swiper') {
+      doctorsSwiper.update();
+    } else {
+      patientsSwiper.update();
+    }
+    
+    document.querySelectorAll('.tab-btn').forEach(tab => tab.classList.remove('active'));
     btn.classList.add('active');
   });
 });

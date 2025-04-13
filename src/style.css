@@ -60,6 +60,10 @@
         margin-bottom: 0 !important;
     }
 
+    .card-carusel {
+        @apply flex flex-col items-center p-8 rounded-md shadow-md;
+    }
+
     .card-function {
         background: var(--gradient-bg);
         @apply rounded-md p-[3px] hover:shadow-lg transition;
@@ -81,6 +85,36 @@
 
     .nav-item {
         @apply uppercase text-[0.938rem] hover:text-[var(--color-green-highlight)] transition;
+    }
+
+    .tab-btn {
+        @apply font-medium border-b-2 border-transparent px-4 py-2 cursor-pointer transition;
+    }
+
+    .tab-btn.active {
+        @apply border-[var(--color-green-highlight)] text-[var(--color-green-highlight)];
+    }
+
+    .carusel-arrow {
+        @apply w-16.75 h-16.75 bg-[var(--color-blue-highlight)] rounded-full flex items-center justify-center cursor-pointer;
+    }
+
+    .carusel-arrow-wrapper {
+        @apply mt-16 flex items-center justify-center gap-18;
+    }
+
+    .swiper-slide {
+        opacity: 0.4;
+        transition: opacity 0.3s ease;
+    }
+      
+    .swiper-slide-active {
+        opacity: 1;
+    }
+      
+    .swiper-slide-prev,
+    .swiper-slide-next {
+        opacity: 0.7;
     }
 }
 
