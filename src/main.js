@@ -11,23 +11,24 @@ document.querySelectorAll('.benefits-toggle').forEach(btn => {
     document.querySelectorAll('.benefits-toggle').forEach(otherBtn => {
       if (otherBtn !== btn) {
         otherBtn.querySelector('img').classList.remove('-rotate-90');
+        otherBtn.classList.remove('selected');
       }
     });
     
-    // Skry všetky benefit obsahy, okrem toho, ktorý chceme prepínať
     document.querySelectorAll('.benefits-content').forEach(el => {
       if (el.id !== targetId) {
         el.classList.add('hidden');
       }
     });
     
-    // Prepni stav zobrazenia pre aktuálny benefit obsah a otoč šípku
     if (contentEl.classList.contains('hidden')) {
       contentEl.classList.remove('hidden');
       btn.querySelector('img').classList.add('-rotate-90');
+      btn.classList.add('selected');
     } else {
       contentEl.classList.add('hidden');
       btn.querySelector('img').classList.remove('-rotate-90');
+      btn.classList.remove('selected');
     }
   });
 });
@@ -71,12 +72,18 @@ document.querySelectorAll('.faq-toggle').forEach(btn => {
       }
     })
 
+    document.querySelectorAll('.faq-toggle').forEach(otherBtn => {
+      otherBtn.parentElement.classList.remove('selected');
+    });
+
     if (contentEl.style.maxHeight && contentEl.style.maxHeight !== '0px') {
       contentEl.style.maxHeight = 0
       icon.classList.remove('rotate-180')
+      btn.parentElement.classList.remove('selected')
     } else {
       contentEl.style.maxHeight = contentEl.scrollHeight + 'px'
       icon.classList.add('rotate-180')
+      btn.parentElement.classList.add('selected');
     }
   })
 })
