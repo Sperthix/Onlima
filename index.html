@@ -9,7 +9,7 @@
   </head>
   <body id="app">
     <!-- Header -->
-    <header class="flex items-center justify-between py-4 px-6 max-w-7xl mx-auto">
+    <header class="flex items-center justify-between py-4 px-6">
       <!-- Logo -->
       <a href="/" class="flex items-center space-x-2">
         <img 
@@ -32,11 +32,11 @@
     </header>
     <main>
       <!-- Hero -->
-      <section class="flex items-center justify-center gap-20 px-75 py-12">
-        <div class="w-1/3 flex justify-center">
+      <section class="flex items-center justify-center gap-20 px-75 max-xl:px-30 py-12 max-lg:gap-0 max-lg:px-10">
+        <div class="w-1/3 flex justify-center max-lg:hidden">
           <img src="src/assets/hero.png" alt="Ilustrácia telefónu" class="max-w-md animate-fade-right duration-1000 delay-200"/>
         </div>
-        <div class="w-2/3">
+        <div class="w-2/3 max-lg:w-full max-lg:flex max-lg:flex-col max-lg:items-center">
           <span class="inline-block uppercase text-[0.875rem] bg-[var(--background-blue)] py-1.75 px-3.25 rounded-lg w-auto">Lekárska pomoc kedykoľvek a kdekoľvek</span>
           <h1 class="leading-20">MediMate - Lorem ipsum dolor sit amet</h1>
           <p class="mb-6">Prekonajte bolesti, obnovte funkciu a dosiahnite optimálny pohyb s odbornou starostlivosťou Spineo Clinic. Začnite svoju cestu k lepšiemu zdraviu už dnes.</p>
@@ -52,20 +52,20 @@
       </section>
       <!-- Sekcia -->
       <section class="relative flex items-center justify-center pt-19.5 pb-21 bg-[var(--background-alt)]">
-        <img src="src/assets/phone1.png" alt="Telefón v ľavej ruke" class="absolute top-27 left-47 w-80 delay-400 animate-levitate" />
+        <img src="src/assets/phone1.png" alt="Telefón v ľavej ruke" class="absolute top-27 left-47 max-xl:left-0 w-80 delay-400 animate-levitate max-lg:hidden"/>
         <div class="max-w-lg text-center">
           <h2 class="mb-13">Zameraní na Váš zdravý život plný pohybu</h2>
           <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse cursus tortor eu lacus volutpat elementum. Maecenas scelerisque diam vel urna sodales ullamcorper. Quisque eu pellentesque purus, a pulvinar erat.</p>
         </div>
-        <img src="src/assets/phone2.png" alt="Telefón v pravej ruke" class="absolute -top-20 right-45 w-86 animate-levitate"
+        <img src="src/assets/phone2.png" alt="Telefón v pravej ruke" class="absolute -top-20 right-45 max-xl:right-0 w-86 animate-levitate max-lg:hidden"
             style="animation-delay: -500ms;"/>
-        <img src="src/assets/heart.svg" alt="Srdce" class="absolute -bottom-20 right-130"/>
+        <img src="src/assets/heart.svg" alt="Srdce" class="absolute -bottom-20 right-130 max-lg:hidden"/>
       </section>
       <!-- Benefity -->
-      <section class="px-50 pt-40 pb-20">
+      <section class="px-50 pt-40 pb-20 max-lg:px-10">
         <h2 class="mb-20">Benefity aplikácie</h2>
-        <div class="flex items-start justify-between gap-25">
-          <ul class="w-3/5">
+        <div class="flex items-start justify-between gap-25 max-lg:flex-col max-lg:items-center max-lg:gap-0">
+          <ul class="w-3/5 max-lg:w-full max-lg:mb-10">
             <li class="border-b border-gray-200 m-0">
               <button class="benefits-toggle selected" data-target="ben1">
                 <h4>AI Asistent, ktorý pomôže vybrať odborníka na Váš problém.</h4>
@@ -103,8 +103,8 @@
               </button>
             </li>
           </ul>
-          <div class="w-2/5">
-            <img src="src/assets/benefits.png" alt="Doktor" class="rounded-md shadow-xl mb-11"/>
+          <div class="w-2/5 max-lg:w-full">
+            <img src="src/assets/benefits.png" alt="Doktor" class="rounded-md shadow-xl mb-11 max-lg:hidden"/>
             <p id="ben1" class="benefits-content">Volajte Vášmu lekárovi, aj keď je obsadený. Tak zavoláte neskôr alebo si dohodnete online hovor. Pri tom môžete odosielať aj krátke textové správy. Snažíme sa, aby bola funkcia Správa liekov dostupná kdekoľvek.1</p>
             <p id="ben2" class="benefits-content hidden">Volajte Vášmu lekárovi, aj keď je obsadený. Tak zavoláte neskôr alebo si dohodnete online hovor. Pri tom môžete odosielať aj krátke textové správy. Snažíme sa, aby bola funkcia Správa liekov dostupná kdekoľvek.2</p>
             <p id="ben3" class="benefits-content hidden">Volajte Vášmu lekárovi, aj keď je obsadený. Tak zavoláte neskôr alebo si dohodnete online hovor. Pri tom môžete odosielať aj krátke textové správy. Snažíme sa, aby bola funkcia Správa liekov dostupná kdekoľvek.3</p>
@@ -115,9 +115,9 @@
         </div>
       </section>
       <!-- Funkcionality -->
-      <section class="px-50 py-33 text-center bg-[var(--background-alt)]">
+      <section class="px-50 max-lg:px-20 max-sm:px-5 py-33 text-center bg-[var(--background-alt)]">
         <h2 class="mb-20">Čo Medicmate dokáže?</h2>
-        <div class="grid gap-6" style="grid-template-columns: repeat(5, 1fr); grid-template-rows: repeat(3, auto); grid-template-areas: 'A A A B B' 'C C E E E' 'D D E E E';">
+        <div class="grid-cards">
           <div class="card-function" style="grid-area: A;">
             <div class="card-function-inner">
               <img src="src/assets/function-help.png" alt="Okamžitá pomoc" />
@@ -166,9 +166,9 @@
          </div>
       </section>
       <!-- IconSekcia -->
-      <section class="relative px-50 py-30 text-center">
+      <section class="relative px-50 py-30 text-center max-lg:px-10">
         <h2 class="mb-20">Prečo sa nebáť použiť Medicmate</h2>
-        <div class="flex flex-row justify-center items-center gap-25">
+        <div class="flex flex-row justify-center items-center gap-25 max-lg:gap-5">
           <div class="flex-1 max-w-[20rem]">
             <img src="src/assets/iconSection1.png" alt="Jednoduché ovládanie" class="mx-auto mb-4"/>
             <h4 class="my-8">Jednoduché ovládanie</h4>
@@ -189,7 +189,7 @@
         <img src="src/assets/stethoscope.svg" alt="Steoskop" class="absolute -bottom-20 right-33"/>
       </section>
       <!-- O nas - Swiper -->
-      <section class="py-12 px-6 bg-[var(--background-alt)]">
+      <section class="py-12 px-6 bg-[var(--background-alt)] max-md:hidden">
         <h2 class="text-center mb-6">Napísali o nás</h2>
         <div class="flex justify-center items-center space-x-8 mb-7.5">
           <button class="tab-btn active" data-target="patients-swiper"><h3>Pacienti</h3></button>
@@ -375,12 +375,12 @@
         </div>
       </section>
       <!-- Pridaj sa -->
-      <section class="flex items-stretch gap-8 px-50 py-12 min-h-[400px]">
-        <div class="flex flex-col justify-between w-1/2">
+      <section class="flex items-stretch gap-8 px-50 py-12 min-h-[400px] max-lg:px-10 max-lg:flex-col">
+        <div class="flex flex-col justify-between w-1/2 max-lg:w-full max-lg:items-center">
           <h2>Si kvalifikovaný lekár a chceš byť aj ty súčasťou moderného zdravotníctva? Pridaj sa k medimate!</h2>
           <button class="btn-gradient w-md"><a href="#">Registrovať</a></button>
         </div>
-        <div class="w-1/2 flex items-center justify-center">
+        <div class="w-1/2 flex items-center justify-center max-lg:w-full max-lg:items-center">
           <img src="src/assets/join-us.png" alt="Lekár používajúci mobil" class="rounded-md shadow-md"/>
         </div>
       </section>
@@ -445,8 +445,8 @@
         </ul>
       </section>
       <!-- Kontaktny formular -->
-      <section class="flex items-start justify-between ps-51 pt-28 mb-6">
-        <div class="w-1/2 pr-43.5">
+      <section class="flex max-lg:flex-col max-lg:px-10 max-lg:items-center items-start justify-between ps-51 pt-28 mb-6">
+        <div class="w-1/2 pr-43.5 max-lg:pr-0 max-lg:w-full">
           <h2 class="mb-11.5">Ste lekár? Buďte aj Vy súčasťou Medicmate</h2>
           <img src="src/assets/map.svg" alt="Adresa" class="w-6 h-6 inline"/>
           <span class="text-[0.875rem] font-medium ms-2">Adresa</span>
@@ -459,7 +459,7 @@
             <a href="mailto:mail@medimate.sk" class="underline hover:">mail@medimate.sk</a>
           </p>
         </div>
-        <div class="w-1/2 bg-[var(--background-alt)] p-18">
+        <div class="w-1/2 bg-[var(--background-alt)] p-18 max-lg:w-full max-lg:p-5">
           <form class="space-y-4">
             <div>
               <label for="name" class="block text-sm font-medium ">Meno</label>
