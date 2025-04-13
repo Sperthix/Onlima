@@ -3,7 +3,13 @@
 @layer base {
     :root {
         --text-color-primary: #777777;
-        --gradient-bg: linear-gradient(180deg, #00DC9B, #96AAFF);
+        --color-green-highlight: #00DC9B;
+        --color-blue-highlight: #96AAFF;
+        --background-alt: #F8F8F8;
+        --border-color: #E7EAEE;
+        --background-blue: #96AAFF1A;
+        --gradient-bg: linear-gradient(180deg, var(--color-green-highlight), var(--color-blue-highlight));
+        --gradient-bg-135: linear-gradient(135deg, var(--color-green-highlight), var(--color-blue-highlight));
     }
     html, body {
         @apply overflow-x-hidden;
@@ -60,5 +66,19 @@
 
     .card-function-inner {
         @apply flex items-center gap-9 bg-white h-full p-9;
+    }
+
+    .form {
+        @apply bg-white mt-1 p-3 block h-12 w-md border-[var(--border-color)] rounded-md;
+    }
+
+    .btn-gradient {
+        background: var(--gradient-bg-135);
+        line-height: 100%;
+        @apply text-white text-[0.875rem] text-center font-medium rounded-2xl py-4 cursor-pointer hover:opacity-90 transition;
+    }
+
+    .nav-item {
+        @apply uppercase text-[0.938rem] hover:text-[var(--color-green-highlight)] transition;
     }
 }
