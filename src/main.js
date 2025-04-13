@@ -2,6 +2,36 @@ import './style.css';
 import Swiper from 'swiper';
 import 'swiper/css';
 
+// Benefity
+document.querySelectorAll('.benefits-toggle').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const targetId = btn.dataset.target;
+    const contentEl = document.getElementById(targetId);
+    
+    document.querySelectorAll('.benefits-toggle').forEach(otherBtn => {
+      if (otherBtn !== btn) {
+        otherBtn.querySelector('img').classList.remove('-rotate-90');
+      }
+    });
+    
+    // Skry všetky benefit obsahy, okrem toho, ktorý chceme prepínať
+    document.querySelectorAll('.benefits-content').forEach(el => {
+      if (el.id !== targetId) {
+        el.classList.add('hidden');
+      }
+    });
+    
+    // Prepni stav zobrazenia pre aktuálny benefit obsah a otoč šípku
+    if (contentEl.classList.contains('hidden')) {
+      contentEl.classList.remove('hidden');
+      btn.querySelector('img').classList.add('-rotate-90');
+    } else {
+      contentEl.classList.add('hidden');
+      btn.querySelector('img').classList.remove('-rotate-90');
+    }
+  });
+});
+
 // Swiper
 new Swiper('#patients-swiper', {
   slidesPerView: 5,
