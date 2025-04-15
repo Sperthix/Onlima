@@ -460,10 +460,11 @@
         </ul>
       </section>
       <!-- Kontaktny formular -->
-      <section id="kontakt" class="flex max-lg:flex-col max-lg:px-10 max-lg:items-center items-start justify-between ps-51 pt-28 mb-6 max-sm:px-1">
-        <div class="w-1/2 pr-43.5 max-lg:pr-0 max-lg:w-full max-sm:flex max-sm:flex-col max-sm:items-center">
-          <h2 class="mb-11.5">Ste lekár? Buďte aj Vy súčasťou Medicmate</h2>
-          <img src="src/assets/map.svg" alt="Adresa" class="w-6 h-6 inline"/>
+      <section id="kontakt" class="flex max-lg:flex-col max-lg:px-10 items-start justify-between ps-51 pt-28 mb-6 max-sm:px-1">
+        <div class="w-1/2 pr-43.5 max-lg:pr-0 max-lg:w-full max-lg:flex max-lg:flex-col max-lg:items-center max-lg:mb-5">
+          <h2 class="mb-11.5 max-lg:text-center">Ste lekár?<br>
+          Buďte aj Vy súčasťou Medicmate</h2>
+          <img src="src/assets/map.svg" alt="Adresa" width="14" height="17" class="inline"/>
           <span class="text-[0.875rem] font-medium ms-2">Adresa</span>
           <p class="my-3 text-base">
             Názov firmy s.r.o.<br>
@@ -474,23 +475,23 @@
             <a href="mailto:mail@medimate.sk" class="underline hover:">mail@medimate.sk</a>
           </p>
         </div>
-        <div class="w-1/2 bg-[var(--background-alt)] p-18 max-lg:w-full max-lg:p-5">
+        <div class="w-1/2 bg-[var(--background-alt)] p-18 max-lg:w-full max-lg:p-5 max-lg:flex max-lg:flex-col max-lg:items-center">
           <form class="space-y-4">
             <div>
               <label for="name" class="block text-sm font-medium ">Meno</label>
-              <input id="name" type="text" class="form" placeholder="Meno">
+              <input id="name" type="text" class="form text-placeholder" placeholder="Meno">
             </div>
             <div>
               <label for="email" class="block text-sm font-medium ">Email</label>
-              <input id="email" type="email" class="form" placeholder="Email">
+              <input id="email" type="email" class="form text-placeholder" placeholder="Email">
             </div>
             <div>
               <label for="message" class="block text-sm font-medium ">Správa</label>
-              <textarea id="message" class="form" rows="4" placeholder="Vaša správa"></textarea>
+              <textarea id="message" class="form h-24 text-placeholder" rows="3" placeholder="Vaša správa"></textarea>
             </div>
             <div>
               <input id="gdpr" type="checkbox" class="mr-2">
-              <label for="gdpr" class="text-sm ">Súhlasím so 
+              <label for="gdpr" class="text-sm  text-neutral-600">Súhlasím so 
                 <span class="text-[var(--color-green-highlight)]">spracovaním osobných údajov</span>
               </label>
             </div>
@@ -500,7 +501,7 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer class="px-6 py-8 max-sm:px-1">
+    <footer class="px-19 py-6 max-sm:px-1">
       <div class="flex items-center justify-between mb-4 max-md:flex-col">
         <div class="flex items-center space-x-2">
           <img src="src/assets/medimate-logo.svg" alt="MediMate" class="h-15.5 max-md:mb-5"/>
