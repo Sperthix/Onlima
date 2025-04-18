@@ -39,6 +39,35 @@ document.querySelectorAll('.benefits-toggle').forEach(btn => {
   });
 });
 
+// Benefity mobile
+document.querySelectorAll('.benefits-toggle-mobile').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const contentEl = document.getElementById(btn.dataset.target)
+    const icon = btn.querySelector('img')
+
+    document.querySelectorAll('.benefits-content-mobile').forEach(el => {
+      if (el !== contentEl) {
+        el.style.maxHeight = 0
+        el.previousElementSibling.querySelector('img').classList.remove('rotate-180')
+      }
+    })
+
+    document.querySelectorAll('.benefits-toggle-mobile').forEach(otherBtn => {
+      otherBtn.parentElement.classList.remove('selected');
+    });
+
+    if (contentEl.style.maxHeight && contentEl.style.maxHeight !== '0px') {
+      contentEl.style.maxHeight = 0
+      icon.classList.remove('rotate-180')
+      btn.parentElement.classList.remove('selected')
+    } else {
+      contentEl.style.maxHeight = contentEl.scrollHeight + 'px'
+      icon.classList.add('rotate-180')
+      btn.parentElement.classList.add('selected');
+    }
+  })
+})
+
 // Swiper
 const patientsSwiper = new Swiper('#patients-swiper', {
   slidesPerView: 5,

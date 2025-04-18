@@ -47,17 +47,33 @@
 }
 
 @layer components {
-    .benefits-toggle,
+
+    .flex-container {
+        @apply flex items-center justify-between;
+    }
+    
     .faq-toggle {
-        @apply w-full text-left  cursor-pointer p-8 m-0 overflow-hidden transition-all duration-300;
+        @apply w-full text-left cursor-pointer p-8 m-0 overflow-hidden transition-all duration-300;
     }
 
     .faq-content {
         @apply max-h-0 w-[90%] mt-0 overflow-hidden transition-[max-height] duration-300;
     }
 
+    .benefits-toggle {
+        @apply flex items-center justify-between w-full p-8 m-0 cursor-pointer overflow-hidden transition-all duration-300;
+    }
+
+    .benefits-toggle-mobile {
+        @apply w-full text-left cursor-pointer p-8 m-0 overflow-hidden transition-all duration-300;
+    }
+
     .benefits-content {
         @apply text-[1rem] max-w-[390px];
+    }
+
+    .benefits-content-mobile {
+        @apply max-h-0 w-[90%] mt-0 overflow-hidden transition-[max-height] duration-300;
     }
 
     .selected {
