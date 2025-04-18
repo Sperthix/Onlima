@@ -41,7 +41,11 @@
 @layer components {
     .benefits-toggle,
     .faq-toggle {
-        @apply flex items-center justify-between w-full cursor-pointer p-8 pe-0 m-0 max-h-[90px] overflow-hidden;
+        @apply w-full text-left  cursor-pointer p-8 m-0 overflow-hidden transition-all duration-300;
+    }
+
+    .faq-content {
+        @apply max-h-0 w-[90%] mt-0 overflow-hidden transition-[max-height] duration-300;
     }
 
     .benefits-content {
@@ -53,13 +57,17 @@
     }
 
     .arrow-icon {
-        @apply w-6 h-6 transform transition;
+        @apply w-6 h-6 transition-transform duration-300;
     }
 
     .li-item {
         @apply border-b border-[#E7EAEE];
         margin-bottom: 0 !important;
     }
+
+    .selected .faq-toggle .faq-content {
+        @apply mt-4;
+      }
 
     .card-carusel {
         @apply flex flex-col items-center p-8 rounded-md shadow-md;
