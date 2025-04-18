@@ -26,7 +26,7 @@
     }
 
     h1 {
-        @apply text-[3.375rem] font-light max-sm:text-[3.5rem];
+        @apply text-[3.375rem] font-light leading-none max-sm:text-[3.5rem];
       }
     
     h2 {
@@ -61,7 +61,7 @@
     }
 
     .benefits-toggle {
-        @apply flex items-center justify-between w-full p-8 m-0 cursor-pointer overflow-hidden transition-all duration-300;
+        @apply flex items-center justify-between text-start w-full p-8 m-0 cursor-pointer overflow-hidden transition-all duration-300;
     }
 
     .benefits-toggle-mobile {
@@ -117,11 +117,11 @@
     .btn-gradient {
         background: var(--gradient-bg-135);
         line-height: 100%;
-        @apply text-white text-[0.875rem] text-center font-medium rounded-2xl py-4 cursor-pointer hover:opacity-90 transition;
+        @apply text-white text-[0.875rem] text-center font-medium rounded-2xl py-4 uppercase cursor-pointer hover:opacity-90 transition;
     }
 
     .nav-item {
-        @apply uppercase text-[0.938rem] hover:text-[var(--color-green-highlight)] transition;
+        @apply uppercase text-[0.938rem] tracking-[0.09em] hover:text-[var(--color-green-highlight)] transition;
     }
 
     .tab-btn {
@@ -132,7 +132,7 @@
         @apply border-[var(--color-green-highlight)] text-[var(--color-green-highlight)];
     }
 
-    .carusel-arrow {
+    .btn-round {
         @apply w-16.75 h-16.75 bg-[var(--color-blue-highlight)] rounded-full flex items-center justify-center cursor-pointer;
     }
 

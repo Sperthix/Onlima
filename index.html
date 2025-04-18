@@ -9,9 +9,9 @@
   </head>
   <body id="app">
     <!-- Header -->
-    <header class="flex-container py-4 px-6 max-w-7xl mx-auto relative">
+    <header class="flex-container p-6 max-w-7xl mx-auto relative">
       <!-- Logo -->
-      <a href="/" class="flex items-center space-x-2">
+      <a href="/" class="flex items-center">
         <img src="src/assets/medimate-logo.svg" alt="MediMate logo" class="h-15 w-auto" />
       </a>
       <!-- Desktop nav -->
@@ -41,27 +41,35 @@
         </ul>
       </nav>
       <!-- Desktop btn -->
-      <button class="btn-gradient hidden lg:block px-8">
+      <button class="btn-gradient hidden lg:block px-8.5">
         <a href="#download">Stiahnuť</a>
       </button>
     </header>
     <main>
       <!-- Hero -->
       <section id="o-aplikacii" class="flex items-center justify-center gap-20 px-75 max-xl:px-30 py-12 max-lg:gap-0 max-lg:px-10">
-        <div class="w-1/3 flex justify-center max-lg:hidden">
-          <img src="src/assets/hero.png" alt="Ilustrácia telefónu" class="max-w-md animate-fade-right duration-1000 delay-200"/>
+        <div class="w-2/5 flex justify-center max-lg:hidden">
+          <img src="src/assets/hero.png" alt="Ilustrácia telefónu" class="h-150 w-auto object-cover overflow-visible animate-fade-right duration-1000 delay-200"/>
         </div>
-        <div class="w-2/3 max-lg:w-full max-lg:flex max-lg:flex-col max-lg:items-center">
-          <span class="inline-block uppercase text-[0.875rem] bg-[var(--background-blue)] py-1.75 px-3.25 rounded-lg w-auto">Lekárska pomoc kedykoľvek a kdekoľvek</span>
-          <h1 class="leading-20">MediMate - Lorem ipsum dolor sit amet</h1>
-          <p class="mb-6">Prekonajte bolesti, obnovte funkciu a dosiahnite optimálny pohyb s odbornou starostlivosťou Spineo Clinic. Začnite svoju cestu k lepšiemu zdraviu už dnes.</p>
-          <div class="flex gap-8">
-            <a href="#">
-              <img src="src/assets/googleplay-button.svg" alt="Stiahnuť z Google Play" class="h-12"/>
-            </a>
-            <a href="#">
-              <img src="src/assets/appstore-button.svg" alt="Stiahnuť z App Store" class="h-12"/>
-            </a>
+        <div class="w-3/5 max-lg:w-full max-lg:flex max-lg:flex-col max-lg:items-center">
+          <span class="inline-block uppercase tracking-[0.09em] text-[0.875rem] bg-[var(--background-blue)] py-1.75 px-3.25 rounded-lg w-auto">Lekárska pomoc kedykoľvek a kdekoľvek</span>
+          <h1 class="mt-8 mb-13">MediMate - Lorem ipsum dolor sit amet</h1>
+          <p class="mb-11">Prekonajte bolesti, obnovte funkciu a dosiahnite optimálny pohyb s odbornou starostlivosťou Spineo Clinic. Začnite svoju cestu k lepšiemu zdraviu už dnes.</p>
+          <div class="flex">
+            <div class="flex-container me-6">
+              <span class="me-5 whitespace-nowrap">Ako to funguje?</span>
+              <button class="w-10 h-10 bg-[var(--color-blue-highlight)] rounded-full flex items-center justify-center cursor-pointer">
+                <img src="src/assets/play.svg" alt="Play" class="w-3.5 h-3"/>
+              </button>
+            </div>
+            <div class="flex-container">
+              <a href="#" class="mx-6">
+                <img src="src/assets/googleplay-button.svg" alt="Stiahnuť z Google Play" class="h-12"/>
+              </a>
+              <a href="#">
+                <img src="src/assets/appstore-button.svg" alt="Stiahnuť z App Store" class="h-12"/>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -202,7 +210,7 @@
         </ul>
       </section>
       <!-- Funkcionality -->
-      <section id="medimate" class="px-50 max-lg:px-20 max-sm:px-5 py-33 text-center bg-[var(--background-alt)]">
+      <section id="medimate" class="relative px-50 max-lg:px-20 max-sm:px-5 py-33 text-center bg-[var(--background-alt)]">
         <h2 class="mb-20">Čo Medicmate dokáže?</h2>
         <div class="grid-cards">
           <div class="card-function" style="grid-area: A;">
@@ -250,7 +258,9 @@
               </div>
             </div>
           </div>
-         </div>
+        </div>
+        <img src="src/assets/capsule.svg" alt="Tabletka" class="absolute top-15 right-50 rotate-110"/>
+        <img src="src/assets/capsule.svg" alt="Tabletka" class="absolute bottom-15 left-50"/>
       </section>
       <!-- IconSekcia -->
       <section class="relative px-50 py-30 text-center max-lg:px-10">
@@ -272,7 +282,6 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed semper ligula, et pulv</p>
           </div>
         </div>
-        <img src="src/assets/capsule.svg" alt="Tabletka" class="absolute -top-15 left-50"/>
         <img src="src/assets/stethoscope.svg" alt="Steoskop" class="absolute -bottom-20 right-33"/>
       </section>
       <!-- O nas - Swiper -->
@@ -363,10 +372,10 @@
             </div>
           </div>
           <div class="carusel-arrow-wrapper">
-            <div id="patients-button-prev" class="carusel-arrow">
+            <div id="patients-button-prev" class="btn-round">
               <img src="src/assets/Arrow-left.svg" alt="Šípka vľavo" class=""/>
             </div>
-            <div id="patients-button-next" class="carusel-arrow">
+            <div id="patients-button-next" class="btn-round">
               <img src="src/assets/Arrow-left.svg" alt="Šípka vpravo" class="rotate-180"/>
             </div>
           </div>
@@ -452,22 +461,24 @@
             </div>
           </div>
           <div class="carusel-arrow-wrapper">
-            <div id="doctors-button-prev" class="carusel-arrow">
+            <div id="doctors-button-prev" class="btn-round">
               <img src="src/assets/Arrow-left.svg" alt="Šípka vľavo" class=""/>
             </div>
-            <div id="doctors-button-next" class="carusel-arrow">
+            <div id="doctors-button-next" class="btn-round">
               <img src="src/assets/Arrow-left.svg" alt="Šípka vpravo" class="rotate-180"/>
             </div>
           </div>
         </div>
       </section>
       <!-- Pridaj sa -->
-      <section class="flex items-stretch gap-8 px-50 py-12 min-h-[400px] max-lg:px-10 max-lg:flex-col">
-        <div class="flex flex-col justify-between w-1/2 max-lg:w-full max-lg:items-center">
-          <h2>Si kvalifikovaný lekár a chceš byť aj ty súčasťou moderného zdravotníctva? Pridaj sa k medimate!</h2>
+      <section class="flex items-stretch gap-38 px-50 py-12 max-lg:px-10 max-lg:flex-col">
+        <div class="flex flex-col justify-between w-2/3 max-lg:w-full max-lg:items-center">
+          <h2 class="leading-[1.2] tracking-normal">
+            Si kvalifikovaný lekár a chceš byť aj ty súčasťou moderného zdravotníctva? Pridaj sa k medimate!
+          </h2>
           <button class="btn-gradient w-md"><a href="#">Registrovať</a></button>
         </div>
-        <div class="w-1/2 flex items-center justify-center max-lg:w-full max-lg:items-center">
+        <div class="w-1/3 flex items-center justify-center max-lg:w-full max-lg:items-center">
           <img src="src/assets/join-us.jpg" alt="Lekár používajúci mobil" class="rounded-md shadow-md"/>
         </div>
       </section>
@@ -590,7 +601,7 @@
         <div class="flex items-center space-x-2">
           <img src="src/assets/medimate-logo.svg" alt="MediMate" class="h-15.5 max-md:mb-5"/>
         </div>
-        <div class="space-x-6 text-[0.938rem]">
+        <div class="flex gap-9.75 text-[0.938rem] tracking-[0.09em] leading-none">
           <a href="#">COOKIES</a>
           <a href="#">OSOBNÉ ÚDAJE A COOKIES</a>
           <a href="#">OBCHODNÉ PODMIENKY</a>
@@ -598,7 +609,7 @@
       </div>
       <hr class="mb-4 border-gray-200"/>
       <div class="flex-container text-sm">
-        <div class="flex space-x-4">
+        <div class="flex gap-6">
           <a href="https://www.facebook.com/" aria-label="Facebook">
             <img src="src/assets/facebook.svg" alt="Facebook"/>
           </a>
@@ -609,8 +620,10 @@
             <img src="src/assets/Twitter.svg" alt="Twitter"/>
           </a>
         </div>
-        <div>&copy; 2023 MediMate. Web a novú aplikáciu od 
-          <a href="https://onlima.sk" class="hover:text-black">Onlima.sk</a>
+        <div class="text-[0.875rem] leading-6 tracking-[-0.09px]">
+          <span class="font-bold">Copyright ©2025 MedicMate. </span>
+          <span>Web na mieru s aplikáciou od</span>
+          <a href="https://onlima.sk" class="font-bold">Onlima.sk</a>
         </div>
       </div>
     </footer>
