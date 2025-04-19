@@ -45,9 +45,9 @@
         <a href="#download">Stiahnuť</a>
       </button>
     </header>
-    <main>
+    <main class="max-sm:px-5">
       <!-- Hero -->
-      <section id="o-aplikacii" class="flex items-center justify-center gap-20 px-75 max-xl:px-30 py-12 max-lg:gap-0 max-lg:px-10">
+      <section id="o-aplikacii" class="flex items-center justify-center gap-20 px-75 py-12 max-xl:px-30 max-lg:gap-0 max-lg:px-10 text-center max-sm:px-0">
         <div class="w-2/5 flex justify-center max-lg:hidden">
           <img src="src/assets/hero.png" alt="Ilustrácia telefónu" class="h-150 w-auto object-cover overflow-visible animate-fade-right duration-1000 delay-200"/>
         </div>
@@ -55,15 +55,15 @@
           <span class="inline-block uppercase tracking-[0.09em] text-[0.875rem] bg-[var(--background-blue)] py-1.75 px-3.25 rounded-lg w-auto">Lekárska pomoc kedykoľvek a kdekoľvek</span>
           <h1 class="mt-8 mb-13">MediMate - Lorem ipsum dolor sit amet</h1>
           <p class="mb-11">Prekonajte bolesti, obnovte funkciu a dosiahnite optimálny pohyb s odbornou starostlivosťou Spineo Clinic. Začnite svoju cestu k lepšiemu zdraviu už dnes.</p>
-          <div class="flex">
-            <div class="flex-container me-6">
-              <span class="me-5 whitespace-nowrap">Ako to funguje?</span>
+          <div class="flex max-sm:flex-col max-sm:gap-5">
+            <div class="flex-container me-6 max-sm:me-0 max-sm:justify-center max-sm:gap-4">
+              <span class="me-5 text-[1.125rem] whitespace-nowrap max-sm:text-[1.25rem]">Ako to funguje?</span>
               <button class="w-10 h-10 bg-[var(--color-blue-highlight)] rounded-full flex items-center justify-center cursor-pointer">
                 <img src="src/assets/play.svg" alt="Play" class="w-3.5 h-3"/>
               </button>
             </div>
             <div class="flex-container">
-              <a href="#" class="mx-6">
+              <a href="#" class="mx-6 max-sm:ms-0">
                 <img src="src/assets/googleplay-button.svg" alt="Stiahnuť z Google Play" class="h-12"/>
               </a>
               <a href="#">
@@ -138,9 +138,10 @@
         </div>
       </section>
       <!-- Benefit - mobile -->
-      <section class="block lg:hidden">
-        <h2 class="mb-20 text-center">Benefity aplikácie</h2>
-        <ul>
+      <section class="lg:hidden flex flex-col items-center justify-center">
+        <h2>Benefity aplikácie</h2>
+        <img src="src/assets/benefits.jpg" alt="Doktor" class="align-middle rounded-md shadow-xl my-15"/>
+        <ul class="mb-20">
           <li class="li-item">
             <button class="benefits-toggle-mobile" data-target="mben1">
               <div class="flex-container">
@@ -210,7 +211,7 @@
         </ul>
       </section>
       <!-- Funkcionality -->
-      <section id="medimate" class="relative px-50 max-lg:px-20 max-sm:px-5 py-33 text-center bg-[var(--background-alt)]">
+      <section id="medimate" class="relative px-50 py-33 text-center bg-[var(--background-alt)] max-lg:px-20 max-sm:px-0">
         <h2 class="mb-20">Čo Medicmate dokáže?</h2>
         <div class="grid-cards">
           <div class="card-function" style="grid-area: A;">
@@ -263,26 +264,26 @@
         <img src="src/assets/capsule.svg" alt="Tabletka" class="absolute bottom-15 left-50"/>
       </section>
       <!-- IconSekcia -->
-      <section class="relative px-50 py-30 text-center max-lg:px-10">
-        <h2 class="mb-20">Prečo sa nebáť použiť Medicmate</h2>
-        <div class="flex flex-row justify-center items-center gap-25 max-lg:gap-5">
-          <div class="flex-1 max-w-[20rem]">
-            <img src="src/assets/iconSection1.jpg" alt="Jednoduché ovládanie" class="mx-auto mb-4"/>
-            <h4 class="my-8">Jednoduché ovládanie</h4>
+      <section class="relative px-50 py-30 text-center max-lg:px-0 max-sm:py-10">
+        <h2 class="mb-20 max-sm:mb-10">Prečo sa nebáť použiť Medicmate</h2>
+        <div class="flex justify-center items-center gap-25 max-lg:gap-5 max-sm:flex-col max-sm:gap-10">
+          <div class="flex-1 max-w-[20rem] max-sm:w-[80%]">
+            <img src="src/assets/iconSection1.jpg" alt="Jednoduché ovládanie" class="mx-auto"/>
+            <h4 class="my-8 max-sm:my-4">Jednoduché ovládanie</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed semper ligula, et pulv</p>
           </div>
-          <div class="flex-1 max-w-[20rem]">
-            <img src="src/assets/iconSection2.jpg" alt="Spoľahliví odborníci" class="mx-auto mb-4"/>
-            <h4 class="my-8">Spoľahliví odborníci</h4>
+          <div class="flex-1 max-w-[20rem] max-sm:w-[80%]">
+            <img src="src/assets/iconSection2.jpg" alt="Spoľahliví odborníci" class="mx-auto"/>
+            <h4 class="my-8 max-sm:my-4">Spoľahliví odborníci</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed semper ligula, et pulv</p>
           </div>
-          <div class="flex-1 max-w-[20rem]">
-            <img src="src/assets/iconSection3.jpg" alt="Poradenstvo na mieru" class="mx-auto mb-4"/>
-            <h4 class="my-8">Poradenstvo na mieru</h4>
+          <div class="flex-1 max-w-[20rem] max-sm:w-[80%]">
+            <img src="src/assets/iconSection3.jpg" alt="Poradenstvo na mieru" class="mx-auto"/>
+            <h4 class="my-8 max-sm:my-4">Poradenstvo na mieru</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed semper ligula, et pulv</p>
           </div>
         </div>
-        <img src="src/assets/stethoscope.svg" alt="Steoskop" class="absolute -bottom-20 right-33"/>
+        <img src="src/assets/stethoscope.svg" alt="Steoskop" class="absolute -bottom-20 right-33 max-sm:top-[66%] max-sm:right-0"/>
       </section>
       <!-- O nas - Swiper -->
       <section id="povedali-o-nas" class="py-12 px-6 bg-[var(--background-alt)] max-md:hidden">
@@ -471,20 +472,20 @@
         </div>
       </section>
       <!-- Pridaj sa -->
-      <section class="flex items-stretch gap-38 px-50 py-12 max-lg:px-10 max-lg:flex-col">
-        <div class="flex flex-col justify-between w-2/3 max-lg:w-full max-lg:items-center">
-          <h2 class="leading-[1.2] tracking-normal">
+      <section class="flex gap-38 px-50 py-12 max-lg:px-10 max-lg:px-0 max-lg:flex-col-reverse max-lg:gap-10">
+        <div class="flex flex-col justify-between w-2/3 max-lg:w-full max-lg:items-center max-sm:gap-5">
+          <h2 class="leading-[1.2] tracking-normal max-lg:text-center max-lg:text-[1.625rem]">
             Si kvalifikovaný lekár a chceš byť aj ty súčasťou moderného zdravotníctva? Pridaj sa k medimate!
           </h2>
-          <button class="btn-gradient w-md"><a href="#">Registrovať</a></button>
+          <button class="btn-gradient w-md max-sm:w-[80%]"><a href="#">Registrovať</a></button>
         </div>
         <div class="w-1/3 flex items-center justify-center max-lg:w-full max-lg:items-center">
           <img src="src/assets/join-us.jpg" alt="Lekár používajúci mobil" class="rounded-md shadow-md"/>
         </div>
       </section>
       <!-- Faq -->
-      <section class="px-6 py-12 w-full max-w-3xl mx-auto">
-        <h2 class="mb-20 text-center">FAQ</h2>
+      <section class="px-6 py-12 w-full max-w-3xl mx-auto max-sm:px-0">
+        <h2 class="mb-20 text-center max-sm:mb-10">FAQ</h2>
         <ul>
           <li class="li-item">
             <button class="faq-toggle" data-target="faq1">
@@ -555,13 +556,15 @@
         </ul>
       </section>
       <!-- Kontaktny formular -->
-      <section id="kontakt" class="flex max-lg:flex-col max-lg:px-10 items-start justify-between ps-51 pt-28 mb-6 max-sm:px-1">
+      <section id="kontakt" class="flex max-lg:flex-col max-lg:px-10 items-start justify-between ps-51 pt-28 mb-6 max-sm:px-0">
         <div class="w-1/2 pr-43.5 max-lg:pr-0 max-lg:w-full max-lg:flex max-lg:flex-col max-lg:items-center max-lg:mb-5">
-          <h2 class="mb-11.5 max-lg:text-center">Ste lekár?<br>
+          <h2 class="mb-11.5 max-lg:text-center leading-[130%] max-sm:text-[2rem] max-sm:mb-6">Ste lekár?<br>
           Buďte aj Vy súčasťou Medicmate</h2>
-          <img src="src/assets/map.svg" alt="Adresa" width="14" height="17" class="inline"/>
-          <span class="text-[0.875rem] font-medium ms-2">Adresa</span>
-          <p class="my-3 text-base">
+          <div class="text-left">
+            <img src="src/assets/map.svg" alt="Adresa" width="14" height="17" class="inline"/>
+            <span class="text-[0.875rem] font-medium ms-2">Adresa</span>
+          </div>
+          <p class="my-3 text-base max-sm:text-center max-sm:mt-1">
             Názov firmy s.r.o.<br>
             Adresa 123, 081 00 Bratislava<br>
           </p>
@@ -596,19 +599,19 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer class="px-19 py-6 max-sm:px-1">
+    <footer class="px-19 py-6 max-sm:px-5">
       <div class="flex-container mb-4 max-md:flex-col">
-        <div class="flex items-center space-x-2">
+        <div class="flex items-center">
           <img src="src/assets/medimate-logo.svg" alt="MediMate" class="h-15.5 max-md:mb-5"/>
         </div>
-        <div class="flex gap-9.75 text-[0.938rem] tracking-[0.09em] leading-none">
+        <div class="flex gap-9.75 text-[0.938rem] tracking-[0.09em] leading-none max-sm:flex-col max-sm:gap-8 max-sm:items-center">
           <a href="#">COOKIES</a>
           <a href="#">OSOBNÉ ÚDAJE A COOKIES</a>
           <a href="#">OBCHODNÉ PODMIENKY</a>
         </div>
       </div>
       <hr class="mb-4 border-gray-200"/>
-      <div class="flex-container text-sm">
+      <div class="flex-container text-sm max-sm:flex-col max-sm:gap-4">
         <div class="flex gap-6">
           <a href="https://www.facebook.com/" aria-label="Facebook">
             <img src="src/assets/facebook.svg" alt="Facebook"/>
@@ -620,9 +623,9 @@
             <img src="src/assets/Twitter.svg" alt="Twitter"/>
           </a>
         </div>
-        <div class="text-[0.875rem] leading-6 tracking-[-0.09px]">
+        <div class="text-[0.875rem] leading-6 tracking-[-0.09px] max-sm:text-center">
           <span class="font-bold">Copyright ©2025 MedicMate. </span>
-          <span>Web na mieru s aplikáciou od</span>
+          <span class="max-sm:whitespace-nowrap">Web na mieru s aplikáciou od</span>
           <a href="https://onlima.sk" class="font-bold">Onlima.sk</a>
         </div>
       </div>
