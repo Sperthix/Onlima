@@ -69,6 +69,13 @@ document.querySelectorAll('.benefits-toggle-mobile').forEach(btn => {
 })
 
 // Swiper
+const functionSwiper = new Swiper('#funcionality-swiper', {
+  slidesPerView: 1,
+  centeredSlides: true,
+  spaceBetween: 24,
+  loop: true,
+});
+
 const patientsSwiper = new Swiper('#patients-swiper', {
   slidesPerView: 5,
   centeredSlides: true,
@@ -84,6 +91,13 @@ const doctorsSwiper = new Swiper('#doctors-swiper', {
   loop: true,
   loopedSlides: 7,
   loopAdditionalSlides: 1,
+});
+
+document.getElementById('functions-button-next').addEventListener('click', () => {
+  functionSwiper.slideNext();
+});
+document.getElementById('functions-button-prev').addEventListener('click', () => {
+  functionSwiper.slidePrev();
 });
 
 document.getElementById('patients-button-next').addEventListener('click', () => {
