@@ -213,53 +213,78 @@
       <!-- Funkcionality -->
       <section id="medimate" class="relative px-50 py-33 text-center bg-[var(--background-alt)] max-lg:px-20 max-sm:-mx-5 max-sm:px-5">
         <h2 class="mb-20">Čo Medicmate dokáže?</h2>
-        <div class="grid-cards">
-          <div class="card-function" style="grid-area: A;">
-            <div class="card-function-inner">
-              <img src="src/assets/function-help.png" alt="Okamžitá pomoc" class="max-sm:hidden"/>
-              <div class="flex flex-col items-start">
-                <h3 class="mb-4">Okamžitá pomoc</h3>
-                <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse cursus tortor eu lacus volutpat elementum.</p>
+        <!-- Swiper container -->
+        <div id="funcionality-swiper" class="swiper w-[80%] h-[520px] mx-auto">
+          <div class="swiper-wrapper">
+            <!-- Slide A -->
+            <div class="swiper-slide card-function">
+              <div class="card-function-inner">
+                <img src="src/assets/function-help.jpg" alt="Okamžitá pomoc" class="card-function-img"/>
+                <div class="flex flex-col items-start justify-start w-2/3 max-md:w-full max-md:justify-center max-md:items-center">
+                  <h2 class="mb-6">Okamžitá pomoc</h2>
+                  <p class="text-start max-md:text-center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse cursus tortor eu lacus volutpat elementum.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card-function" style="grid-area: B;">
-            <div class="card-function-inner">
-              <img src="src/assets/function-message.png" alt="Správa" class="max-sm:hidden"/>
-              <div class="flex flex-col items-start">
-                <h3 class="mb-4">Správa</h3>
-                <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <!-- Slide B -->
+            <div class="swiper-slide card-function">
+              <div class="card-function-inner">
+                <img src="src/assets/function-report.jpg" alt="Správa" class="card-function-img"/>
+                <div class="flex flex-col items-start justify-start w-2/3 max-md:w-full max-md:justify-center max-md:items-center">
+                  <h2 class="mb-6">Správa</h2>
+                  <p class="text-start max-md:text-center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card-function" style="grid-area: C;">
-            <div class="card-function-inner">
-              <img src="src/assets/function-ai.png" alt="AI tool" class="max-sm:hidden"/>
-              <div class="flex flex-col items-start justify-start">
-                <h3 class="mb-4">AI tool</h3>
-                <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <!-- Slide C -->
+            <div class="swiper-slide card-function">
+              <div class="card-function-inner">
+                <img src="src/assets/function-ai.jpg" alt="AI tool" class="card-function-img"/>
+                <div class="flex flex-col items-start justify-start w-2/3 max-md:w-full max-md:justify-center max-md:items-center">
+                  <h2 class="mb-6">AI tool</h2>
+                  <p class="text-start max-md:text-center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card-function" style="grid-area: D;">
-            <div class="card-function-inner">
-              <img src="src/assets/function-consult.png" alt="Konzultácie" class="max-sm:hidden"/>
-              <div class="flex flex-col items-start">
-                <h3 class="mb-4">Konzultácie</h3>
-                <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <!-- Slide D -->
+            <div class="swiper-slide card-function">
+              <div class="card-function-inner">
+                <img src="src/assets/function-consultation.jpg" alt="Konzultácie" class="card-function-img"/>
+                <div class="flex flex-col items-start justify-start w-2/3 max-md:w-full max-md:justify-center max-md:items-center">
+                  <h2 class="mb-6">Konzultácie</h2>
+                  <p class="text-start max-md:text-center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card-function" style="grid-area: E;">
-            <div class="card-function-inner">
-              <img src="src/assets/function-specialist.png" alt="Výber špecialistov" class="max-sm:hidden"/>
-              <div class="flex flex-col items-start">
-                <h3 class="mb-4">Výber špecialistov</h3>
-                <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse cursus tortor eu lacus volutpat elementum.</p>
+            <!-- Slide E -->
+            <div class="swiper-slide card-function">
+              <div class="card-function-inner">
+                <img src="src/assets/function-specialist.jpg" alt="Výber špecialistov" class="card-function-img"/>
+                <div class="flex flex-col items-start justify-start w-2/3 max-md:w-full max-md:justify-center max-md:items-center">
+                  <h2 class="mb-6">Výber špecialistov</h2>
+                  <p class="text-start max-md:text-center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse cursus tortor eu lacus volutpat elementum.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <button id="functions-button-prev" class="btn-round absolute top-[58%] -translate-y-1/2 left-[10%] pointer-events-auto z-50 max-lg:left-[5%] max-md:hidden">
+          <img src="src/assets/Arrow-left.svg" alt="Šípka vľavo" class=""/>
+        </button>
+        <button id="functions-button-next" class="btn-round absolute top-[58%] -translate-y-1/2 right-[10%] pointer-events-auto z-50 max-lg:right-[5%] max-md:hidden">
+          <img src="src/assets/Arrow-left.svg" alt="Šípka vpravo" class="rotate-180"/>
+        </button>
         <img src="src/assets/capsule.svg" alt="Tabletka" class="absolute top-15 right-50 rotate-110"/>
         <img src="src/assets/capsule.svg" alt="Tabletka" class="absolute bottom-15 left-50"/>
       </section>

@@ -103,7 +103,11 @@
     }
 
     .card-function-inner {
-        @apply flex items-center gap-9 bg-white h-full p-9;
+        @apply flex items-center gap-15 bg-white h-full w-full px-15 py-22 max-md:flex-col max-md:p-5 max-md:gap-0 max-md:justify-center;
+    }
+
+    .card-function-img {
+        @apply w-1/3 h-auto object-contain lg:w-[350px] md:w-auto max-md:mb-5;
     }
 
     .form {
