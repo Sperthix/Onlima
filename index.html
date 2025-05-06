@@ -10,7 +10,7 @@
   <body id="app">
 
     <!-- Header -->
-    <header class="container-wrapper flex-container py-6">
+    <header class="container-wrapper flex-container relative py-6">
       <!-- Logo -->
       <a href="/" class="flex items-center">
         <img src="src/assets/medimate-logo.svg" alt="MediMate logo" class="h-15 w-auto" />
@@ -32,7 +32,7 @@
         </svg>
       </button>
       <!-- Mobile navigačný panel -->
-      <nav id="mobile-menu" class="lg:hidden hidden bg-white absolute top-full left-0 w-full shadow-md">
+      <nav id="mobile-menu" class="hidden bg-white absolute top-full left-0 w-full shadow-md lg:hidden">
         <ul class="flex flex-col py-4">
           <li class="px-6 py-2 border-b"><a href="#o-aplikacii" class="block">O aplikácií</a></li>
           <li class="px-6 py-2 border-b"><a href="#benefity" class="block">Benefity</a></li>
@@ -47,7 +47,7 @@
       </button>
     </header>
 
-    <main class="max-sm:px-5">
+    <main>
 
       <!-- Hero -->
       <section id="o-aplikacii" class="container-wrapper flex items-center justify-center gap-0 py-12 text-center lg:gap-30 lg:text-start">
@@ -78,7 +78,7 @@
       </section>
 
       <!-- Sekcia -->
-      <section class="relative flex items-center justify-center pt-19.5 pb-21 bg-[var(--background-alt)] max-sm:-mx-5 max-sm:px-5">
+      <section class="relative flex items-center justify-center pt-19.5 pb-21 bg-[var(--background-alt)] max-sm:px-5">
         <img src="src/assets/phone1.png" alt="Telefón v ľavej ruke" class="absolute top-27 left-0 xxl:left-[12.5%] w-80 delay-400 animate-levitate max-lg:hidden"/>
         <div class="max-w-lg text-center">
           <h2 class="mb-13">Zameraní na Váš zdravý život plný pohybu</h2>
@@ -144,7 +144,7 @@
       </section>
 
       <!-- Benefit - mobile -->
-      <section class="lg:hidden flex flex-col items-center justify-center mt-5">
+      <section class="lg:hidden flex flex-col items-center justify-center mt-5 px-3">
         <h2>Benefity aplikácie</h2>
         <img src="src/assets/benefits.jpg" alt="Doktor" class="align-middle rounded-md shadow-xl my-15"/>
         <ul class="mb-20">
@@ -218,16 +218,16 @@
       </section>
 
       <!-- Funkcionality -->
-      <section id="medimate" class="relative px-50 py-33 text-center bg-[var(--background-alt)] max-lg:px-20 max-sm:-mx-5 max-sm:px-5">
+      <section id="medimate" class="relative px-10 xl:px-50 py-33 text-center bg-[var(--background-alt)] max-lg:px-20 max-sm:-mx-5 max-sm:px-5">
         <h2 class="mb-20">Čo Medicmate dokáže?</h2>
         <!-- Swiper container -->
-        <div id="funcionality-swiper" class="swiper w-[80%] h-[520px] mx-auto">
+        <div id="funcionality-swiper" class="swiper w-[80%] max-w-[1200px] h-[520px] mx-auto">
           <div class="swiper-wrapper">
             <!-- Slide A -->
             <div class="swiper-slide card-function">
               <div class="card-function-inner">
                 <img src="src/assets/function-help.jpg" alt="Okamžitá pomoc" class="card-function-img"/>
-                <div class="flex flex-col items-start justify-start w-2/3 max-md:w-full max-md:justify-center max-md:items-center">
+                <div class="card-function-text">
                   <h2 class="mb-6">Okamžitá pomoc</h2>
                   <p class="text-start max-md:text-center">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse cursus tortor eu lacus volutpat elementum.
@@ -239,7 +239,7 @@
             <div class="swiper-slide card-function">
               <div class="card-function-inner">
                 <img src="src/assets/function-report.jpg" alt="Správa" class="card-function-img"/>
-                <div class="flex flex-col items-start justify-start w-2/3 max-md:w-full max-md:justify-center max-md:items-center">
+                <div class="card-function-text">
                   <h2 class="mb-6">Správa</h2>
                   <p class="text-start max-md:text-center">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -251,7 +251,7 @@
             <div class="swiper-slide card-function">
               <div class="card-function-inner">
                 <img src="src/assets/function-ai.jpg" alt="AI tool" class="card-function-img"/>
-                <div class="flex flex-col items-start justify-start w-2/3 max-md:w-full max-md:justify-center max-md:items-center">
+                <div class="card-function-text">
                   <h2 class="mb-6">AI tool</h2>
                   <p class="text-start max-md:text-center">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -263,7 +263,7 @@
             <div class="swiper-slide card-function">
               <div class="card-function-inner">
                 <img src="src/assets/function-consultation.jpg" alt="Konzultácie" class="card-function-img"/>
-                <div class="flex flex-col items-start justify-start w-2/3 max-md:w-full max-md:justify-center max-md:items-center">
+                <div class="card-function-text">
                   <h2 class="mb-6">Konzultácie</h2>
                   <p class="text-start max-md:text-center">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -275,7 +275,7 @@
             <div class="swiper-slide card-function">
               <div class="card-function-inner">
                 <img src="src/assets/function-specialist.jpg" alt="Výber špecialistov" class="card-function-img"/>
-                <div class="flex flex-col items-start justify-start w-2/3 max-md:w-full max-md:justify-center max-md:items-center">
+                <div class="card-function-text">
                   <h2 class="mb-6">Výber špecialistov</h2>
                   <p class="text-start max-md:text-center">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -286,10 +286,10 @@
             </div>
           </div>
         </div>
-        <button id="functions-button-prev" class="btn-round absolute top-[58%] -translate-y-1/2 left-[10%] pointer-events-auto z-50 max-lg:left-[5%] max-md:hidden">
+        <button id="functions-button-prev" class="btn-round absolute top-[58%] -translate-y-1/2 left-[2%] xl:left-[10%] xxl:left-[20%] pointer-events-auto z-50 max-lg:left-[5%] max-md:hidden">
           <img src="src/assets/Arrow-left.svg" alt="Šípka vľavo" class=""/>
         </button>
-        <button id="functions-button-next" class="btn-round absolute top-[58%] -translate-y-1/2 right-[10%] pointer-events-auto z-50 max-lg:right-[5%] max-md:hidden">
+        <button id="functions-button-next" class="btn-round absolute top-[58%] -translate-y-1/2 right-[2%] xl:right-[10%] xxl:right-[20%] pointer-events-auto z-50 max-lg:right-[5%] max-md:hidden">
           <img src="src/assets/Arrow-left.svg" alt="Šípka vpravo" class="rotate-180"/>
         </button>
         <img src="src/assets/capsule.svg" alt="Tabletka" class="absolute top-15 right-50 rotate-110"/>
@@ -320,89 +320,89 @@
       </section>
 
       <!-- O nas - Swiper -->
-      <section id="povedali-o-nas" class="py-12 px-6 bg-[var(--background-alt)]">
+      <section id="povedali-o-nas" class="py-12 px-6 bg-[var(--background-alt)] max-sm:overflow-x-visible">
         <h2 class="text-center mb-6">Napísali o nás</h2>
         <div class="flex justify-center items-center space-x-8 mb-7.5">
           <button class="tab-btn active" data-target="patients-swiper"><h3>Pacienti</h3></button>
           <button class="tab-btn" data-target="doctors-swiper"><h3>Lekári</h3></button>
         </div>
-        <div id="patients-swiper" class="swiper-container relative">
+        <div id="patients-swiper" class="swiper-container max-lg:-mx-[50vw] relative">
           <div class="swiper-wrapper">
             <div class="swiper-slide card-carusel">
               <h3 class="text-[1.25rem]">Monika</h3>
               <p class="text-base my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus, est ut vehicula aliquam, enim tortor.</p>
               <div class="flex space-x-1 mb-2">
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-empty.jpg" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-empty.png" alt="Star" class="w-4 h-4"/>
               </div>
             </div>
             <div class="swiper-slide card-carusel">
               <h3 class="text-[1.25rem]">Peter</h3>
               <p class="text-base my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus, est ut vehicula aliquam, enim tortor.</p>
               <div class="flex space-x-1 mb-2">
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-empty.jpg" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-empty.png" alt="Star" class="w-4 h-4"/>
               </div>
             </div>
             <div class="swiper-slide card-carusel">
               <h3 class="text-[1.25rem]">Jaroslav</h3>
               <p class="text-base my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus, est ut vehicula aliquam, enim tortor.</p>
               <div class="flex space-x-1 mb-2">
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-empty.jpg" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-empty.png" alt="Star" class="w-4 h-4"/>
               </div>
             </div>
             <div class="swiper-slide card-carusel">
               <h3 class="text-[1.25rem]">Matúš</h3>
               <p class="text-base my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus, est ut vehicula aliquam, enim tortor.</p>
               <div class="flex space-x-1 mb-2">
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-empty.jpg" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-empty.png" alt="Star" class="w-4 h-4"/>
               </div>
             </div>
             <div class="swiper-slide card-carusel">
               <h3 class="text-[1.25rem]">Karolína</h3>
               <p class="text-base my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus, est ut vehicula aliquam, enim tortor.</p>
               <div class="flex space-x-1 mb-2">
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-empty.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-empty.jpg" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-empty.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-empty.png" alt="Star" class="w-4 h-4"/>
               </div>
             </div>
             <div class="swiper-slide card-carusel">
               <h3 class="text-[1.25rem]">Igor</h3>
               <p class="text-base my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus, est ut vehicula aliquam, enim tortor.</p>
               <div class="flex space-x-1 mb-2">
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
               </div>
             </div>
             <div class="swiper-slide card-carusel">
               <h3 class="text-[1.25rem]">Monika</h3>
               <p class="text-base my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus, est ut vehicula aliquam, enim tortor.</p>
               <div class="flex space-x-1 mb-2">
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-empty.jpg" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-empty.png" alt="Star" class="w-4 h-4"/>
               </div>
             </div>
           </div>
@@ -415,83 +415,83 @@
             </div>
           </div>
         </div>
-        <div id="doctors-swiper" class="swiper-container relative hidden">
+        <div id="doctors-swiper" class="swiper-container max-lg:-mx-[50vw] relative hidden">
           <div class="swiper-wrapper">
             <div class="swiper-slide card-carusel">
               <h3 class="text-[1.25rem]">Ján</h3>
               <p class="text-base my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus, est ut vehicula aliquam, enim tortor.</p>
               <div class="flex space-x-1 mb-2">
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-empty.jpg" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-empty.png" alt="Star" class="w-4 h-4"/>
               </div>
             </div>
             <div class="swiper-slide card-carusel">
               <h3 class="text-[1.25rem]">Danka</h3>
               <p class="text-base my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus, est ut vehicula aliquam, enim tortor.</p>
               <div class="flex space-x-1 mb-2">
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-empty.jpg" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-empty.png" alt="Star" class="w-4 h-4"/>
               </div>
             </div>
             <div class="swiper-slide card-carusel">
               <h3 class="text-[1.25rem]">Matúš</h3>
               <p class="text-base my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus, est ut vehicula aliquam, enim tortor.</p>
               <div class="flex space-x-1 mb-2">
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-empty.jpg" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-empty.png" alt="Star" class="w-4 h-4"/>
               </div>
             </div>
             <div class="swiper-slide card-carusel">
               <h3 class="text-[1.25rem]">Karolína</h3>
               <p class="text-base my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus, est ut vehicula aliquam, enim tortor.</p>
               <div class="flex space-x-1 mb-2">
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-empty.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-empty.jpg" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-empty.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-empty.png" alt="Star" class="w-4 h-4"/>
               </div>
             </div>
             <div class="swiper-slide card-carusel">
               <h3 class="text-[1.25rem]">Monika</h3>
               <p class="text-base my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus, est ut vehicula aliquam, enim tortor.</p>
               <div class="flex space-x-1 mb-2">
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-empty.jpg" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-empty.png" alt="Star" class="w-4 h-4"/>
               </div>
             </div>
             <div class="swiper-slide card-carusel">
               <h3 class="text-[1.25rem]">Štefan</h3>
               <p class="text-base my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus, est ut vehicula aliquam, enim tortor.</p>
               <div class="flex space-x-1 mb-2">
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-empty.jpg" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-empty.png" alt="Star" class="w-4 h-4"/>
               </div>
             </div>
             <div class="swiper-slide card-carusel">
               <h3 class="text-[1.25rem]">Karolína</h3>
               <p class="text-base my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus, est ut vehicula aliquam, enim tortor.</p>
               <div class="flex space-x-1 mb-2">
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-full.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-empty.jpg" alt="Star" class="w-4 h-4"/>
-                <img src="src/assets/star-empty.jpg" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-full.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-empty.png" alt="Star" class="w-4 h-4"/>
+                <img src="src/assets/star-empty.png" alt="Star" class="w-4 h-4"/>
               </div>
             </div>
           </div>
@@ -507,8 +507,8 @@
       </section>
 
       <!-- Pridaj sa -->
-      <section class="container-wrapper flex justify-between mt-40 py-12 max-lg:px-0 max-lg:flex-col-reverse max-lg:gap-10">
-        <div class="flex flex-col justify-between w-2/3 max-lg:w-full max-lg:items-center max-sm:gap-5">
+      <section class="container-wrapper flex justify-between mt-40 py-12 max-lg:px-3 max-lg:flex-col-reverse max-lg:gap-10">
+        <div class="flex flex-col justify-between w-2/3 max-lg:w-full max-lg:items-center max-lg:gap-5">
           <h2 class="leading-[1.2] max-w-[600px] tracking-normal max-lg:text-center max-lg:text-[1.625rem]">
             Si kvalifikovaný lekár a chceš byť aj ty súčasťou moderného zdravotníctva? Pridaj sa k medimate!
           </h2>
@@ -520,7 +520,7 @@
       </section>
 
       <!-- Faq -->
-      <section class="px-6 py-12 w-full max-w-3xl mx-auto mt-16 max-sm:px-0">
+      <section class="px-6 py-12 w-full max-w-3xl mx-auto mt-16 max-sm:px-3">
         <h2 class="mb-20 text-center max-sm:mb-10">FAQ</h2>
         <ul>
           <li class="li-item">
@@ -594,20 +594,20 @@
 
       <!-- Kontaktny formular -->
       <section id="kontakt" class="flex flex-col items-start justify-between ps-[12.5%] pt-28 mb-6 lg:flex-row max-lg:px-1 max-sm:px-0 max-sm:pt-10">
-        <div class="max-w-[420px] max-lg:pr-0 max-lg:w-full max-lg:flex max-lg:flex-col max-lg:items-center max-lg:mb-10">
+        <div class="max-w-[420px] max-lg:self-center max-lg:pr-0 max-lg:w-full max-lg:flex max-lg:flex-col max-lg:items-center max-lg:mb-10">
           <h2 class="mb-11.5 max-lg:text-center leading-[130%] max-sm:text-[2rem] max-sm:mb-6">Ste lekár?<br>
           Buďte aj Vy súčasťou Medicmate</h2>
           <div class="text-left">
             <img src="src/assets/map.svg" alt="Adresa" width="14" height="17" class="inline"/>
             <span class="text-[0.875rem] font-medium ms-2">Adresa</span>
           </div>
-          <p class="my-3 text-base max-sm:text-center max-sm:mt-1">
+          <p class="my-3 text-base max-lg:text-center max-sm:mt-1">
             Názov firmy s.r.o.<br>
             Adresa 123, 081 00 Bratislava<br>
           </p>
           <p class="mt-5 text-base text-[var(--color-green-highlight)]">
-            +421 972 456 789<br>
-            <a href="mailto:mail@medimate.sk" class="underline hover:">mail@medimate.sk</a>
+            <a class="cursor-pointer hover:underline">+421 972 456 789</a><br>
+            <a href="mailto:mail@medimate.sk" class="cursor-pointer hover:underline">mail@medimate.sk</a>
           </p>
         </div>
         <div class="w-1/2 bg-[var(--background-alt)] p-18 max-lg:w-full max-lg:p-5 max-lg:flex max-lg:flex-col max-lg:items-center">
@@ -637,7 +637,7 @@
     </main>
     
     <!-- Footer -->
-    <footer class="px-19 py-6 max-sm:px-5">
+    <footer class="px-19 py-6 max-lg:px-5">
       <div class="flex-container mb-8 max-md:flex-col">
         <img src="src/assets/medimate-logo.svg" alt="MediMate" class="h-15.5 max-md:mb-5"/>
         <div class="flex gap-9.75 text-[0.938rem] tracking-[0.09em] leading-none max-sm:flex-col max-sm:gap-8 max-sm:items-center">
