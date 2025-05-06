@@ -1,8 +1,7 @@
 @layer components {
 
     .container-wrapper {
-        @apply w-full max-w-[1028px] mx-auto;
-        @apply px-3 lg:px-0;
+        @apply w-full max-w-screen-xl mx-auto px-3 md:px-5 lg:px-10;
     }
 
     .flex-container {
@@ -22,7 +21,7 @@
     }
 
     .benefits-toggle-mobile {
-        @apply w-full text-left cursor-pointer px-4 py-8 m-0 overflow-hidden transition-all duration-300;
+        @apply flex flex-col gap-4 w-full text-left cursor-pointer px-4 py-8 m-0 overflow-hidden transition-all duration-300;
     }
 
     .benefits-content {

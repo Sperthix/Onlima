@@ -77,20 +77,44 @@ const functionSwiper = new Swiper('#funcionality-swiper', {
 });
 
 const patientsSwiper = new Swiper('#patients-swiper', {
-  slidesPerView: 5,
+  slidesPerView: 3,
   centeredSlides: true,
   spaceBetween: 12,
   loop: true,
-  loopedSlides: 7
+  loopedSlides: 7,
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 33,
+    },
+    1024: {
+      slidesPerView: 5,
+    },
+    1920: {
+      slidesPerView: 7
+    }
+  }
 });
 
 const doctorsSwiper = new Swiper('#doctors-swiper', {
-  slidesPerView: 5,
+  slidesPerView: 3,
   centeredSlides: true,
   spaceBetween: 12,
   loop: true,
   loopedSlides: 7,
   loopAdditionalSlides: 1,
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 33,
+    },
+    1024: {
+      slidesPerView: 5,
+    },
+    1920: {
+      slidesPerView: 7
+    }
+  }
 });
 
 document.getElementById('functions-button-next').addEventListener('click', () => {
