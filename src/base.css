@@ -9,6 +9,7 @@
     --background-blue: #96AAFF1A;
     --gradient-bg: linear-gradient(180deg, var(--color-green-highlight), var(--color-blue-highlight));
     --gradient-bg-135: linear-gradient(135deg, var(--color-green-highlight), var(--color-blue-highlight));
+    --gradient-bg-reverse: linear-gradient(-135deg, var(--color-green-highlight), var(--color-blue-highlight));
 
     --breakpoint-xxl: 1500px;
 }

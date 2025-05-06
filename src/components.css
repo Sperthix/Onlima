@@ -77,7 +77,11 @@
     .btn-gradient {
         background: var(--gradient-bg-135);
         line-height: 100%;
-        @apply text-white text-[0.875rem] text-center font-medium rounded-2xl py-4 uppercase cursor-pointer hover:opacity-90 transition;
+        @apply text-white text-[0.875rem] text-center font-medium rounded-2xl py-4 uppercase cursor-pointer;
+    }
+
+    .btn-gradient:hover {
+        background: var(--gradient-bg-reverse);
     }
 
     .nav-item {
