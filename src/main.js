@@ -2,11 +2,13 @@ import './style.css';
 import Swiper from 'swiper';
 import 'swiper/css';
 
+
 // Hamburger menu
 document.getElementById('mobile-menu-toggle').addEventListener('click', () => {
   const mobileMenu = document.getElementById('mobile-menu');
   mobileMenu.classList.toggle('hidden');
 });
+
 
 // Benefity
 const benefitsData = {
@@ -47,7 +49,6 @@ function selectBenefit(btn) {
   });
   btn.classList.add('selected');
   btn.querySelector('.arrow-icon').classList.add('-rotate-90');
-  // Aktualizovať panel
   imgEl.src = benefitsData[btn.dataset.key].img;
   txtEl.textContent = benefitsData[btn.dataset.key].text;
 }
@@ -60,34 +61,44 @@ toggles.forEach(btn => {
 
 selectBenefit(toggles[0]);
 
+
 // Benefity mobile
-document.querySelectorAll('.benefits-toggle-mobile').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const contentEl = document.getElementById(btn.dataset.target)
-    const icon = btn.querySelector('img')
+const mobToggles = document.querySelectorAll('.benefits-toggle-mobile');
+const imgMob     = document.getElementById('benefits-img-mobile');
 
-    document.querySelectorAll('.benefits-content-mobile').forEach(el => {
-      if (el !== contentEl) {
-        el.style.maxHeight = 0
-        el.previousElementSibling.querySelector('img').classList.remove('-rotate-90')
-      }
-    })
+function toggleMobile(btn) {
+  const txt = btn.querySelector('.benefits-content-mobile');
+  const arrow = btn.querySelector('.arrow-icon');
 
-    document.querySelectorAll('.benefits-toggle-mobile').forEach(otherBtn => {
-      otherBtn.parentElement.classList.remove('selected');
-    });
+  if (txt.style.maxHeight && txt.style.maxHeight !== '0px') {
+    txt.style.maxHeight = '0';
+    btn.classList.remove('selected');
+    arrow.classList.remove('rotate-180');
+    return;
+  }
 
-    if (contentEl.style.maxHeight && contentEl.style.maxHeight !== '0px') {
-      contentEl.style.maxHeight = 0
-      icon.classList.remove('rotate-180')
-      btn.parentElement.classList.remove('selected')
-    } else {
-      contentEl.style.maxHeight = contentEl.scrollHeight + 'px'
-      icon.classList.add('rotate-180')
-      btn.parentElement.classList.add('selected');
-    }
-  })
-})
+  mobToggles.forEach(other => {
+    const t = other.querySelector('.benefits-content-mobile');
+    const a = other.querySelector('.arrow-icon');
+    t.style.maxHeight = '0';
+    other.classList.remove('selected');
+    a.classList.remove('rotate-180');
+  });
+
+  txt.style.maxHeight = txt.scrollHeight + 'px';
+  btn.classList.add('selected');
+  arrow.classList.add('rotate-180');
+
+  const key = btn.dataset.key;
+  imgMob.src = benefitsData[key].img;
+}
+
+mobToggles.forEach(btn => {
+  btn.addEventListener('click', () => toggleMobile(btn));
+});
+
+toggleMobile(mobToggles[0]);
+
 
 // Swiper
 const functionSwiper = new Swiper('#funcionality-swiper', {
@@ -159,6 +170,7 @@ document.getElementById('doctors-button-prev').addEventListener('click', () => {
   doctorsSwiper.slidePrev();
 });
 
+
 // Swiper tabs
 document.querySelectorAll('.tab-btn').forEach(btn => {
   btn.addEventListener('click', () => {
@@ -177,6 +189,7 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
     btn.classList.add('active');
   });
 });
+
 
 // FAQ 
 document.querySelectorAll('.faq-toggle').forEach(btn => {
