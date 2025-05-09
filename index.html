@@ -95,50 +95,53 @@
         <div class="flex items-start justify-between gap-25 max-lg:flex-col max-lg:items-center max-lg:gap-0">
           <ul class="w-3/5 max-lg:w-full max-lg:mb-10">
             <li class="border-b border-gray-200 m-0">
-              <button class="benefits-toggle selected" data-target="ben1">
+              <button class="benefits-toggle selected" data-key="ben1">
                 <h4>AI Asistent, ktorý pomôže vybrať odborníka na Váš problém.</h4>
                 <img src="src/assets/arrow-down.svg" alt="Šípka" class="arrow-icon -rotate-90"/>
               </button>
             </li>
             <li class="border-b border-gray-200 m-0">
-              <button class="benefits-toggle" data-target="ben2">
+              <button class="benefits-toggle" data-key="ben2">
                 <h4>Možnosť vyžiadania okamžitej online pomoci</h4>
                 <img src="src/assets/arrow-down.svg" alt="Šípka" class="arrow-icon"/>
               </button>
             </li>
             <li class="border-b border-gray-200 m-0">
-              <button class="benefits-toggle" data-target="ben3">
+              <button class="benefits-toggle" data-key="ben3">
                 <h4>Osobný profil, ktorý definuje Váš zdravotný stav</h4>
                 <img src="src/assets/arrow-down.svg" alt="Šípka" class="arrow-icon"/>
               </button>
             </li>
             <li class="border-b border-gray-200 m-0">
-              <button class="benefits-toggle" data-target="ben4">
+              <button class="benefits-toggle" data-key="ben4">
                 <h4>Správa lekárovi, ako alternatívna komunikácia pre rôzne typy žiadostí</h4>
                 <img src="src/assets/arrow-down.svg" alt="Šípka" class="arrow-icon"/>
               </button>
             </li>
             <li class="border-b border-gray-200 m-0">
-              <button class="benefits-toggle" data-target="ben5">
+              <button class="benefits-toggle" data-key="ben5">
                 <h4>Možnosť vyžiadania okamžitej online pomoci</h4>
                 <img src="src/assets/arrow-down.svg" alt="Šípka" class="arrow-icon"/>
               </button>
             </li>
             <li class="border-b border-gray-200 m-0">
-              <button class="benefits-toggle" data-target="ben6">
+              <button class="benefits-toggle" data-key="ben6">
                 <h4>Osobný profil, ktorý definuje Váš zdravotný stav</h4>
-                <img src="src/assets/arrow-down.svg" alt="Šípka" class="arrow-icon"/>
+                <img src="src/assets/arrow-down.svg" alt="Šípka" class="arrow-icon transform transition-transform"/>
               </button>
             </li>
           </ul>
+
           <div class="w-2/5 max-lg:w-full">
-            <img src="src/assets/benefits.jpg" alt="Doktor" class="rounded-md shadow-xl mb-11 max-lg:hidden"/>
-            <p id="ben1" class="benefits-content">Volajte Vášmu lekárovi, aj keď je obsadený. Tak zavoláte neskôr alebo si dohodnete online hovor. Pri tom môžete odosielať aj krátke textové správy. Snažíme sa, aby bola funkcia Správa liekov dostupná kdekoľvek.1</p>
-            <p id="ben2" class="benefits-content hidden">Volajte Vášmu lekárovi, aj keď je obsadený. Tak zavoláte neskôr alebo si dohodnete online hovor. Pri tom môžete odosielať aj krátke textové správy. Snažíme sa, aby bola funkcia Správa liekov dostupná kdekoľvek.2</p>
-            <p id="ben3" class="benefits-content hidden">Volajte Vášmu lekárovi, aj keď je obsadený. Tak zavoláte neskôr alebo si dohodnete online hovor. Pri tom môžete odosielať aj krátke textové správy. Snažíme sa, aby bola funkcia Správa liekov dostupná kdekoľvek.3</p>
-            <p id="ben4" class="benefits-content hidden">Volajte Vášmu lekárovi, aj keď je obsadený. Tak zavoláte neskôr alebo si dohodnete online hovor. Pri tom môžete odosielať aj krátke textové správy. Snažíme sa, aby bola funkcia Správa liekov dostupná kdekoľvek.4</p>
-            <p id="ben5" class="benefits-content hidden">Volajte Vášmu lekárovi, aj keď je obsadený. Tak zavoláte neskôr alebo si dohodnete online hovor. Pri tom môžete odosielať aj krátke textové správy. Snažíme sa, aby bola funkcia Správa liekov dostupná kdekoľvek.5</p>
-            <p id="ben6" class="benefits-content hidden">Volajte Vášmu lekárovi, aj keď je obsadený. Tak zavoláte neskôr alebo si dohodnete online hovor. Pri tom môžete odosielať aj krátke textové správy. Snažíme sa, aby bola funkcia Správa liekov dostupná kdekoľvek.6</p>
+            <img
+              id="benefits-img"
+              src="src/assets/benefits.jpg"
+              alt="Doktor"
+              class="rounded-md shadow-xl mb-11 max-lg:hidden"
+            />
+            <p id="benefits-text" class="text-base leading-relaxed">
+              Voláte Vášmu lekárovi, ale je obsadený. Tak zavoláte neskôr a zas je obsadený. Voláte opäť o hodinu, tento krát Vám nikto nedvíha. Pritom ho chcete len požiadať, aby Vám elektronicky zaslal recept na lieky, ktoré pravidelne beriete. Práve u nás na to slúži funkcia Správa lekárovi.
+            </p>
           </div>
         </div>
       </section>

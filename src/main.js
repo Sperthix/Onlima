@@ -9,35 +9,56 @@ document.getElementById('mobile-menu-toggle').addEventListener('click', () => {
 });
 
 // Benefity
-document.querySelectorAll('.benefits-toggle').forEach(btn => {
+const benefitsData = {
+  ben1: {
+    img: 'src/assets/benefits.jpg',
+    text: 'Voláte Vášmu lekárovi, ale je obsadený. Tak zavoláte neskôr a zas je obsadený. Voláte opäť o hodinu, tento krát Vám nikto nedvíha. Pritom ho chcete len požiadať, aby Vám elektronicky zaslal recept na lieky, ktoré pravidelne beriete. Práve u nás na to slúži funkcia Správa lekárovi.'
+  },
+  ben2: {
+    img: 'src/assets/benefits.jpg',
+    text: 'Voláte Vášmu lekárovi, ale je obsadený. Tak zavoláte neskôr a zas je obsadený. Voláte opäť o hodinu, tento krát Vám nikto nedvíha. Pritom ho chcete len požiadať, aby Vám elektronicky zaslal recept na lieky, ktoré pravidelne beriete.'
+  },
+  ben3: {
+    img: 'src/assets/benefits.jpg',
+    text: 'Voláte Vášmu lekárovi, ale je obsadený. Tak zavoláte neskôr a zas je obsadený. Voláte opäť o hodinu, tento krát Vám nikto nedvíha.3'
+  },
+  ben4: {
+    img: 'src/assets/benefits.jpg',
+    text: 'Voláte Vášmu lekárovi, ale je obsadený. Tak zavoláte neskôr a zas je obsadený. Voláte opäť o hodinu, tento krát Vám nikto nedvíha.4'
+  },
+  ben5: {
+    img: 'src/assets/benefits.jpg',
+    text: 'Voláte Vášmu lekárovi, ale je obsadený. Tak zavoláte neskôr a zas je obsadený. Voláte opäť o hodinu, tento krát Vám nikto nedvíha.5'
+  },
+  ben6: {
+    img: 'src/assets/benefits.jpg',
+    text: 'Voláte Vášmu lekárovi, ale je obsadený. Tak zavoláte neskôr a zas je obsadený. Voláte opäť o hodinu, tento krát Vám nikto nedvíha.6'
+  }
+};
+
+const toggles = document.querySelectorAll('.benefits-toggle');
+const imgEl   = document.getElementById('benefits-img');
+const txtEl   = document.getElementById('benefits-text');
+
+function selectBenefit(btn) {
+  toggles.forEach(b => {
+    b.classList.remove('selected');
+    b.querySelector('.arrow-icon').classList.remove('-rotate-90');
+  });
+  btn.classList.add('selected');
+  btn.querySelector('.arrow-icon').classList.add('-rotate-90');
+  // Aktualizovať panel
+  imgEl.src = benefitsData[btn.dataset.key].img;
+  txtEl.textContent = benefitsData[btn.dataset.key].text;
+}
+
+toggles.forEach(btn => {
   btn.addEventListener('click', () => {
-    const targetId = btn.dataset.target;
-    const contentEl = document.getElementById(targetId);
-    
-    document.querySelectorAll('.benefits-toggle').forEach(otherBtn => {
-      if (otherBtn !== btn) {
-        otherBtn.querySelector('img').classList.remove('-rotate-90');
-        otherBtn.classList.remove('selected');
-      }
-    });
-    
-    document.querySelectorAll('.benefits-content').forEach(el => {
-      if (el.id !== targetId) {
-        el.classList.add('hidden');
-      }
-    });
-    
-    if (contentEl.classList.contains('hidden')) {
-      contentEl.classList.remove('hidden');
-      btn.querySelector('img').classList.add('-rotate-90');
-      btn.classList.add('selected');
-    } else {
-      contentEl.classList.add('hidden');
-      btn.querySelector('img').classList.remove('-rotate-90');
-      btn.classList.remove('selected');
-    }
+    selectBenefit(btn);
   });
 });
+
+selectBenefit(toggles[0]);
 
 // Benefity mobile
 document.querySelectorAll('.benefits-toggle-mobile').forEach(btn => {
@@ -48,7 +69,7 @@ document.querySelectorAll('.benefits-toggle-mobile').forEach(btn => {
     document.querySelectorAll('.benefits-content-mobile').forEach(el => {
       if (el !== contentEl) {
         el.style.maxHeight = 0
-        el.previousElementSibling.querySelector('img').classList.remove('rotate-180')
+        el.previousElementSibling.querySelector('img').classList.remove('-rotate-90')
       }
     })
 
